@@ -1,0 +1,1 @@
+ALTER TABLE "settings_versions" DROP CONSTRAINT "settings_versions_hash_unique";
