@@ -23,7 +23,7 @@ These rows will be loaded into the `verification_log` table in M1.
 | V9 | EODHD EOD availability time for Nordic venues | Not stated for non-US venues; example shows prior session available by 06:51 UTC | UNVERIFIED — measure in M1 |
 | V10 | EODHD First North coverage | Not stated | OPEN — confirm with API key |
 | V11 | ECB reference rates | Published around 16:00 CET on TARGET working days | SOURCED |
-| V12 | Nasdaq Nordic RSS feeds | Four feed URLs confirmed, including First North; 30 s maximum polling | SOURCED |
+| V12 | Nasdaq Nordic RSS feeds | Feeds exist, but carry **exchange notices** (derivatives, warrants, expiries), not company announcements, and hold only the latest 20 items. Corrected 2026-09-26; see V23 | SOURCED (corrected) |
 | V13 | Oslo Newsweb | No official RSS or API found; database terms permit private use only | SOURCED (terms); feed OPEN |
 | V14 | Business press RSS | Yle Talous and Kauppalehti feeds exist; others not yet checked | PARTLY SOURCED |
 | V15 | Insider transactions | Swedish PDMR register as CSV (Finansinspektionen open data); elsewhere via exchange announcements | SOURCED (SE); rest via news feeds |
@@ -188,3 +188,4 @@ Change it in the environment's settings (Network access), either by allowing the
 | # | Item | Finding | Status |
 |---|---|---|---|
 | V22 | Free price source for Nasdaq Nordic | `api.nasdaq.com/api/nordic/instruments/TX50063/chart/download?assetClass=SHARES&fromDate=2025-01-01&toDate=2026-09-25` returned 435 daily rows for Nokia (2025-01-02 to 2026-09-25) with fields "Opening price", "High price", "Low price", "Closing price", "Average price", "Total volume", "Turnover", "Trades". Screener (`/api/nordic/screener/shares`, category MAIN_MARKET or FIRST_NORTH, market HEL, STO or CPH) lists ISIN, orderbook ID and sector. Market codes: HEL, STO, CPH, ICE. Orderbook IDs are `TX…` (post-INET). No Oslo. Terms of use not found | SOURCED (tested 2026-09-26); terms UNVERIFIED |
+| V23 | Nasdaq company announcements | `api.news.eu.nasdaq.com/news/query.action?type=json&globalGroup=companyNews&globalName=NordicAllMarkets&limit=200&start=N&dir=DESC` returns company, market, category (e.g. "Inside information"), headline, language, release time and message URL; no ISIN. `disclosureId` is unique per announcement. Use `timeZone=UTC`: `timeZone=CET` actually returns Central European local time including summer time. `fromDate` and `toDate` are ignored; paging with `start` goes back about 2-3 days per 200 items; `count` caps at 10,000. About 80-100 items per weekday across Nordic and Baltic markets, about 85 % in HEL, STO and CPH, about 73 % in English (sample of 200, 24 Sep 2026). Filtering by company name returned nothing | SOURCED (tested 2026-09-26); history depth UNVERIFIED |

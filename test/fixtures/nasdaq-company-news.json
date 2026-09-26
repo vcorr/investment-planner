@@ -1,0 +1,3406 @@
+{
+  "results" : {
+    "item" : [ {
+      "disclosureId" : 1465411,
+      "categoryId" : 436,
+      "headline" : "Moody's Ratings affirms Iceland's A1 ratings, maintains stable outlook",
+      "language" : "en",
+      "languages" : [ "is", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be28000b3469dd9970ec5a93d76cf42c0&lang=en&src=listed",
+      "releaseTime" : "2026-09-26 09:19:50",
+      "published" : "2026-09-26 09:19:50",
+      "market" : "Main Market, Iceland",
+      "attachment" : [ ],
+      "company" : "Lánamál ríkisins",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465410,
+      "categoryId" : 428,
+      "headline" : "CORRECTED FINANCIAL CALENDAR 2026",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b36bd57ac8ba9e724b1c60b141024929d&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 20:04:34",
+      "published" : "2026-09-25 20:04:34",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "Amber Latvijas balzams",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465409,
+      "categoryId" : 428,
+      "headline" : "Conapto secures new bridge facility",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1ddc4207f8a97fed1d3546adf94deefa&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 19:50:00",
+      "published" : "2026-09-25 19:50:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255464.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a3be02f205edd235922e6573ff09703e5"
+      } ],
+      "company" : "Conapto Holding AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465406,
+      "categoryId" : 55,
+      "headline" : "Enad Global 7 announces staff reduction at Cold Iron Studios",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b11229559f656ff5fb3f1e98fae065b92&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 18:00:00",
+      "published" : "2026-09-25 18:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Enad Global 7 announces staff reduction at Cold Iron Studios.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7e7915f7139ee00d98c75bc50b9cdebf"
+      } ],
+      "company" : "Enad Global 7 AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465405,
+      "categoryId" : 69,
+      "headline" : "Framery Group Plc: Acquisition of own shares during week 39, 2026",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b68443eccbc0c1aa211e3de8ea967a8ce&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 17:00:00",
+      "published" : "2026-09-25 17:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "fileName" : "FRAMERY TRADES 39.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4940cb9b1be73fff7695f1f12841f9b2"
+      } ],
+      "company" : "Framery Group Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465404,
+      "categoryId" : 497,
+      "headline" : "Klappir hf.: Share Offering Concluded",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bcee6db141bffe670f8edb91451a2901f&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 17:00:00",
+      "published" : "2026-09-25 17:00:00",
+      "market" : "First North Iceland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Klappir hf. Share Offering Concluded.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae1448f703c42eeb9354ee242ebbfb136"
+      } ],
+      "company" : "Klappir Grænar Lausnir hf.",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465403,
+      "categoryId" : 428,
+      "headline" : "AMBER BEVERAGE GROUP ANNOUNCES FIXING COUPON RATE FOR A FLOATING-RATE BOND EFFECTIVE FROM 30 SEPTEMBER 2026",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0a24a94e7430c39a9ced2f4b35846411&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 16:14:07",
+      "published" : "2026-09-25 16:14:07",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "Amber Beverage Group Holding S.à r.l.",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465402,
+      "categoryId" : 498,
+      "headline" : "Composition of Betolar Plc's Shareholders' Nomination Board",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4e65464992cd10da0c74b7700efb66ff&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 16:00:00",
+      "published" : "2026-09-25 16:00:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Betolar Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465401,
+      "categoryId" : 498,
+      "headline" : "Betolar Oyj:n osakkeenomistajien nimitystoimikunnan kokoonpano",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b78563a6543c28e695f3983fb25d36023&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 16:00:00",
+      "published" : "2026-09-25 16:00:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Betolar Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465400,
+      "categoryId" : 69,
+      "headline" : "Verkkokauppa.com Oyj: Acquisition of own shares during week 39, 2026",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bce39ebe077d9dc835f168cb616d9c5fa&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 16:00:00",
+      "published" : "2026-09-25 16:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "fileName" : "FI4000049812 20260925.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9b7add52abbae98a9d156a2e089660bd"
+      } ],
+      "company" : "Verkkokauppa.com Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465399,
+      "categoryId" : 69,
+      "headline" : "Orion Corporation: Acquisition of own shares during week 39, 2026",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b61d028ca798a2ec91e8a9a5a7c43087d&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 16:00:00",
+      "published" : "2026-09-25 16:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "fileName" : "FI0009014377_20260925.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af2b82e2f68a26c711262020bf60125fd"
+      } ],
+      "company" : "Orion",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465396,
+      "categoryId" : 69,
+      "headline" : "Marimekko Corporation: Repurchase of own shares during week 39/2026",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b76b367f1d65bbb7795586be28720bbd3&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 15:45:00",
+      "published" : "2026-09-25 15:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "fileName" : "MEKKO_Trades_Week_39.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa7549e19e6e8992c89068beac20ea590"
+      } ],
+      "company" : "Marimekko Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465395,
+      "categoryId" : 66,
+      "headline" : "Savox Communications Plc - Managers' transactions - Kettunen",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b29ffe0ab682664f0cc0faf233b72076f&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 15:45:00",
+      "published" : "2026-09-25 15:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Savox Communications Oy",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465394,
+      "categoryId" : 428,
+      "headline" : "Arion Bank: second phase of the sale process for Blikastaðaland ehf. to commence - total purchase price of bids ranges from ISK 14 to 16 billion",
+      "language" : "en",
+      "languages" : [ "en", "is" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6a554ac28b28fb7dbc01589d6bd8068b&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 15:37:00",
+      "published" : "2026-09-25 15:37:00",
+      "market" : "Main Market, Iceland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Arion Bank second phase of the sale process for Blikastaaland ehf. to commence - total purchase price of bids ranges from ISK 14 to 16 billion.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a5e6d5059abe1749a612d63b2a1927b69"
+      } ],
+      "company" : "Arion banki hf.",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465393,
+      "categoryId" : 69,
+      "headline" : "Tieto: Share repurchases on week 39",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7427ce0b1e95db4c299b6ffa76e15161&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 15:30:00",
+      "published" : "2026-09-25 15:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255470.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a39161f0c42eca81eb47a1a0c005f16d8"
+      }, {
+        "mimetype" : "application/vnd.ms-excel",
+        "fileName" : "TIETO 21.9-25.9.2026 Trades.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7e0e5505e5dc262ca6974798e3416c66"
+      } ],
+      "company" : "Tieto Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465392,
+      "categoryId" : 69,
+      "headline" : "Tieto: Omien osakkeiden hankinta viikolla 39",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bab8dfb2e6c7863203297d4713f10e24b&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 15:30:00",
+      "published" : "2026-09-25 15:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255469.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a8b2ffd538f69fa17e804070ab3ece069"
+      }, {
+        "mimetype" : "application/vnd.ms-excel",
+        "fileName" : "TIETO 21.9-25.9.2026 Trades.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac0122d0368629180b5d7726bb3569d41"
+      } ],
+      "company" : "Tieto Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465388,
+      "categoryId" : 428,
+      "headline" : "Dura Sverige AB (publ) - Successful Placement of Senior Secured Callable Floating Rate Bonds",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1e9848766fe416b7537931152c4b9879&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 15:00:00",
+      "published" : "2026-09-25 15:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Dura Sverige AB publ - Successful Placement of Senior Secured Callable Floating Rate Bonds.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2028c3e168e7949f7662cd43d4a8de77"
+      } ],
+      "company" : "Dura Sverige AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465387,
+      "categoryId" : 498,
+      "headline" : "Aallon Group Oyj:n osakkeenomistajien nimitystoimikunnan jäsenet on nimetty",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b824d928256d00008d4f5d30315834332&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 14:50:00",
+      "published" : "2026-09-25 14:50:00",
+      "market" : "First North Finland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255453.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af29d403b820e0b4b94811845c8da0923"
+      } ],
+      "company" : "Aallon Group Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465354,
+      "categoryId" : 72,
+      "headline" : "Changes in the Management Board of AS PN Project",
+      "language" : "en",
+      "languages" : [ "en", "lv" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd476b8b86c0838a66afe654e4ac66936&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 14:22:40",
+      "published" : "2026-09-25 14:22:40",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "PN Project",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465351,
+      "categoryId" : 500,
+      "headline" : "Frigate AS unaudited interim financial statements for the 6 months ended 30 June 2026",
+      "language" : "en",
+      "languages" : [ "en", "lv" ],
+      "cnsCategory" : "Half year financial report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b8121a48c326047b0b61113b9705eb1b1&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 14:14:00",
+      "published" : "2026-09-25 14:14:00",
+      "market" : "First North Latvia",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Frigate AS 2026_q2_LV.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9ce94022f8ea3a991abc827ad272789a"
+      } ],
+      "company" : "Frigate",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465352,
+      "categoryId" : 55,
+      "headline" : "Calviks acquires Atrium People and strengthens its Norwegian investment platform Norvika",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4c3977a93a91cc22bf87faee9e14ad1d&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 14:12:00",
+      "published" : "2026-09-25 14:12:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Calviks acquires Atrium People and strengthens its Norwegian investment platform Norvika.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aca1e0a6bfa86af38ca1e43a7073e8263"
+      } ],
+      "company" : "Calviks AB (publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465350,
+      "categoryId" : 498,
+      "headline" : "Shareholders' Nomination Board appointed at Detection Technology",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc6d7a60a16487d6f49eca45930421e5c&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 14:00:00",
+      "published" : "2026-09-25 14:00:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Detection Technology Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465349,
+      "categoryId" : 55,
+      "headline" : "Kanada tar nästa steg mot framtida GlobalEye-förmåga",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bcddc38c13e75ce891dd1e84587f8305d&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 13:36:00",
+      "published" : "2026-09-25 13:36:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255398.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a6811b47d637729750552d59e4dd14795"
+      } ],
+      "company" : "SAAB AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465348,
+      "categoryId" : 55,
+      "headline" : "Canada takes next step towards future GlobalEye capability",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=babad92c5b4aae983fbd49be3c2e230b8&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:36:00",
+      "published" : "2026-09-25 13:36:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255397.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9e027201e1314ca77c335cc21031717f"
+      } ],
+      "company" : "SAAB AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465346,
+      "categoryId" : 497,
+      "headline" : "Dataproces Group A/S once again issues warrants to selected employees this year for retention and incentive purposes.",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b70f8fe00ba12197a13211161a9f2e728&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:33:04",
+      "published" : "2026-09-25 13:33:04",
+      "market" : "First North Denmark",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Download announcement as PDF.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad782b66a1e30246b36f5a37ba7f9c5d9"
+      } ],
+      "company" : "Dataproces Group A/S",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465345,
+      "categoryId" : 302,
+      "headline" : "LHV Group's own share acquisition transactions",
+      "language" : "en",
+      "languages" : [ "en", "et" ],
+      "cnsCategory" : "Corporate Action",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b8f5572d67c87d8decdc6d0b0ce7b2efe&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:30:00",
+      "published" : "2026-09-25 13:30:00",
+      "market" : "Main Market, Tallinn",
+      "attachment" : [ ],
+      "company" : "LHV Group",
+      "cnsTypeId" : "25"
+    }, {
+      "disclosureId" : 1465344,
+      "categoryId" : 436,
+      "headline" : "Oma Savings Bank Plc issues a covered bond of EUR 200 million as part of a bond program",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=ba759a0bdeab65b505ef69a95f8d3dc64&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:30:00",
+      "published" : "2026-09-25 13:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Oma Säästöpankki Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465342,
+      "categoryId" : 428,
+      "headline" : "Correction: Debitormassens sammensætning (CK92)",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7b8c60f5473ee63314b39376eddd35b9&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 13:21:27",
+      "published" : "2026-09-25 13:21:27",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "text/xml",
+        "fileName" : "CK92_21.09.2026.xml",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a38793b8d3028ac6adb37dd96423a2b36"
+      } ],
+      "company" : "DLR Kredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465341,
+      "categoryId" : 55,
+      "headline" : "Calviks acquires Drift Sør and strengthens its Norwegian investment platform Norvika in energy and industry",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd03c5d168de9c813a32cc2ca47fa4e1a&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:21:00",
+      "published" : "2026-09-25 13:21:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Calviks acquires Drift Sr and strengthens its Norwegian investment platform Norvika in energy and industry.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae8761220362a9435846bcb0a17c08e8a"
+      } ],
+      "company" : "Calviks AB (publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465340,
+      "categoryId" : 55,
+      "headline" : "Point Properties initierar ett skriftligt förfarande under utestående obligationslån",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b87e3c15b9176ce0fcbe8307957473ff0&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 13:20:00",
+      "published" : "2026-09-25 13:20:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Point Properties initierar ett skriftligt forfarande under utestaende obligationslan.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2b23ab1afbc8d7efa9b8c8855ad17155"
+      } ],
+      "company" : "Point Properties Portfolio 1 AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465339,
+      "categoryId" : 500,
+      "headline" : "Yook OÜ unaudited consolidated interim report for first half-year 2026",
+      "language" : "en",
+      "languages" : [ "en", "et" ],
+      "cnsCategory" : "Half year financial report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1fd9674dfee0f27c3d00ba5d6ef2289e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:15:54",
+      "published" : "2026-09-25 13:15:54",
+      "market" : "First North Estonia",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Yook OU 2026 H1 report EN.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac50fa2542db3d03d8374409464f68a1a"
+      } ],
+      "company" : "Yook",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465338,
+      "categoryId" : 108,
+      "headline" : "BlincVision receives first order from established company in the defence industry",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b542bf97645dc382d759f351ebad16e05&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:08:00",
+      "published" : "2026-09-25 13:08:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "BlincVision receives first order from established company in the defence industry.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a962877f0d515d972ce7bf4fdd4e27187"
+      } ],
+      "company" : "BlincVision AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465337,
+      "categoryId" : 66,
+      "headline" : "Dantax A/S - Ledende medarbejders transaktioner",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b064fd169ddc83a1d69c0f1049c66de0e&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 13:08:00",
+      "published" : "2026-09-25 13:08:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Salg af aktier 250926 Holding.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9d6bf9e26ed64bce85e5443a30f150e8"
+      } ],
+      "company" : "Dantax A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465300,
+      "categoryId" : 62,
+      "headline" : "The Shareholders' Meeting of JSC Attīstības finanšu institūcija Altum has been convened",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Notice to general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bac0ced416c133ac4152b44f8a3f41084&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 13:05:00",
+      "published" : "2026-09-25 13:05:00",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "Attīstības finanšu institūcija Altum",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465330,
+      "categoryId" : 500,
+      "headline" : "PLLC Consilium optimum performance results for the First Half of 2026",
+      "language" : "en",
+      "languages" : [ "en", "lt" ],
+      "cnsCategory" : "Half year financial report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bcf18c55e26340bf5c222401b17d39174&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:54:24",
+      "published" : "2026-09-25 12:54:24",
+      "market" : "First North Lithuania",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Consilium_optimum_financial_reports_for_the_first_half_of_2026_06.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a12817c6949e446bb77f928c807100af0"
+      } ],
+      "company" : "Consilium optimum",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465331,
+      "categoryId" : 428,
+      "headline" : "Inside information: Pihlajalinna negotiating an acquisition to expand its operations into Central Uusimaa",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b56096c77cf4c29ded46b15d40c9600f4&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:45:00",
+      "published" : "2026-09-25 12:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Pihlajalinna Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465326,
+      "categoryId" : 432,
+      "headline" : "Optomedin hallitus on päättänyt uudesta optio-ohjelmasta",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Changes in the rights attached to the classes of shares or securities",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6abf4b3823e1b4dd210817f77e16bbe1&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 12:30:00",
+      "published" : "2026-09-25 12:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255377.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/adb9a1653d4b65b93875a503d7059aa02"
+      } ],
+      "company" : "Optomed Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465325,
+      "categoryId" : 432,
+      "headline" : "Optomed's Board of Directors has resolved to establish a new stock option plan",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes in the rights attached to the classes of shares or securities",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b5289a9fa347c8d5347713f01132ad9f6&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:30:00",
+      "published" : "2026-09-25 12:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255378.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a20397c43c27d064fdf66b968fa99f5ce"
+      } ],
+      "company" : "Optomed Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465323,
+      "categoryId" : 270,
+      "headline" : "Rovsing A/S releases its Annual Report 2025/26",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Annual Financial Report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b131a2091c10fb5e03a37f73cff549c32&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:19:13",
+      "published" : "2026-09-25 12:19:13",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Announcement415_Annual_Report_2025-26.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a57845b3f2a59085d688b7801768106db"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "ROVSING Annual Report 2025-2026_final.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a89c68c4f4ff93eb99c2cbf136ac70d04"
+      }, {
+        "mimetype" : "application/xhtml+xml",
+        "fileName" : "ROVSING Annual Report 2025-2026_final.xhtml",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae6ac8026da630ba1216e5c71a2e41e31"
+      } ],
+      "company" : "Rovsing A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465158,
+      "categoryId" : 108,
+      "headline" : "SIA Saules BESS announces fixing of coupon rate for the floating-rate secured bonds effective from 30 September 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc4ee51531d16c23a2105e19bc8d79c7c&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:09:45",
+      "published" : "2026-09-25 12:09:45",
+      "market" : "First North Latvia",
+      "attachment" : [ ],
+      "company" : "Saules BESS",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465321,
+      "categoryId" : 144,
+      "headline" : "Major Shareholder Announcement",
+      "language" : "en",
+      "languages" : [ "en", "da" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b38692bb4020b7a7654f1f83440b307b1&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:04:04",
+      "published" : "2026-09-25 12:04:04",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "36_Notification of major shareholdings.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad76dbed080353caa4e305b4e43369e15"
+      } ],
+      "company" : "Tryg A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465316,
+      "categoryId" : 436,
+      "headline" : "Composition of Taaleri's Shareholders' Nomination Board",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b199dab65a210b532dfe7d9165811ea30&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:09",
+      "published" : "2026-09-25 12:00:09",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Taaleri Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465317,
+      "categoryId" : 66,
+      "headline" : "QPR Software Plc: Managements' Transactions (Salo)",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6c35a047995ef0599bff7e6a75b40f78&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:00",
+      "published" : "2026-09-25 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "QPR Software",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465315,
+      "categoryId" : 66,
+      "headline" : "QPR Software Plc: Managements' Transactions (Lehto)",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b404dcb932e0c2c2df132f6ffb3d564a0&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:00",
+      "published" : "2026-09-25 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "QPR Software",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465314,
+      "categoryId" : 66,
+      "headline" : "QPR Software Plc: Managements' Transactions (Erkheikki)",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b69659c2e53ff8745e290d11df6de1d68&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:00",
+      "published" : "2026-09-25 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "QPR Software",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465313,
+      "categoryId" : 66,
+      "headline" : "QPR Software Plc: Managements' Transactions (Maliniemi)",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0f25ccbbe332eb6c96e032fa927a68cb&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:00",
+      "published" : "2026-09-25 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "QPR Software",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465312,
+      "categoryId" : 66,
+      "headline" : "QPR Software Plc: Managements' Transactions (Mäkinen)",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b23ef062cdae312df32cae0805c4df716&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 12:00:00",
+      "published" : "2026-09-25 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "QPR Software",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465307,
+      "categoryId" : 108,
+      "headline" : "SIA “iCotton” announces fixing of coupon rate for the floating-rate bonds effective from 30 September 2026",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=ba8bb454ca7864e9c36f96eb6d6648ffc&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:41:18",
+      "published" : "2026-09-25 11:41:18",
+      "market" : "First North Latvia",
+      "attachment" : [ ],
+      "company" : "iCotton",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465309,
+      "categoryId" : 72,
+      "headline" : "Muutos Kesla Oyj:n johtoryhmässä: Kesla nimittää Tuomo Salon myynti- ja jälkimarkkinointijohtajaksi",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b10b5df6499300b1fccf1561edfb793f0&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 11:40:00",
+      "published" : "2026-09-25 11:40:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "image/jpeg",
+        "fileName" : "Tuomo_Salo_2026_09_25_web.jpg",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2bf6d978c618b5a9958035ddc4087951"
+      } ],
+      "company" : "Kesla Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465308,
+      "categoryId" : 436,
+      "headline" : "Fixing of Coupon Interest Rate",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b15e12a77d6b1f9461cd4e42080c13743&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:36:06",
+      "published" : "2026-09-25 11:36:06",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Jyske Realkredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465304,
+      "categoryId" : 59,
+      "headline" : "Koskisen Corporation's financial reporting and Annual General Meeting in 2027",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Financial Calendar",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd396c9e8b0a0c8154ed543ce88835dba&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:15:00",
+      "published" : "2026-09-25 11:15:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Koskisen Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465303,
+      "categoryId" : 55,
+      "headline" : "Paradox Interactive sells Playrion to Trophy Games",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b33dffcb31eae12dbc83bb2b7314577dd&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:11:04",
+      "published" : "2026-09-25 11:11:04",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Paradox Interactive AB (publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465298,
+      "categoryId" : 55,
+      "headline" : "Aixia wins new global customer within data security",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6e5a321179165d51f36b7609253f7b49&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:00:00",
+      "published" : "2026-09-25 11:00:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Aixia wins new global customer within data security.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ab7aa6c4259c27397116a396b3494eeb2"
+      } ],
+      "company" : "White Pearl Technology Group AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465297,
+      "categoryId" : 67,
+      "headline" : "The Finnish Financial Supervisory Authority has approved the Finnish language prospectus in relation to Revenio Group Corporation's rights offering",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Prospectus/Announcement of Prospectus",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf6162c4e5637c591a4c0077f3f6f3033&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 11:00:00",
+      "published" : "2026-09-25 11:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "The Finnish Financial Supervisory Authority has approved the Finnish language prospectus in relation to Revenio Group Corporations rights offering.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9b708be506deadf240fba0b02fc63ad6"
+      } ],
+      "company" : "Revenio Group Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465296,
+      "categoryId" : 436,
+      "headline" : "Fixing of coupon rate effective from 1 October 2026",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0bade37e40e289351dc27168059a37c1&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 10:58:38",
+      "published" : "2026-09-25 10:58:38",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "fileName" : "20260925 Bilag til rentefaststtelse-okt2026_uk.docx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a286b74298203caadf5456677a9caf23f"
+      } ],
+      "company" : "Realkredit Danmark A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465295,
+      "categoryId" : 428,
+      "headline" : "Styrelsen för Fastator informerar om diskussioner med preferensaktieägare avseende förslag till omvandling av preferensaktier till stamaktier",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bdb6b1e4eb5e01c626f99a03031303cdd&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 10:40:00",
+      "published" : "2026-09-25 10:40:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Styrelsen for Fastator informerar om diskussioner med preferensaktieagare avseende forslag till omvandling av preferensaktier till stamaktier.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aeb2be99baafaac554c861a6be87f3152"
+      } ],
+      "company" : "AB Fastator",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465294,
+      "categoryId" : 58,
+      "headline" : "90 %:n vähimmäishyväksyntäedellytys täyttynyt Fortumin Elmera Group ASA:sta tekemän suositellun vapaaehtoisen julkisen käteisostotarjouksen osalta",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Tender offer",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb46c0781e9d22f9758b1024e6e0439db&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 10:20:00",
+      "published" : "2026-09-25 10:20:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255319.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad51153ac1f89d555feeeba8568d88277"
+      } ],
+      "company" : "Fortum",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465293,
+      "categoryId" : 58,
+      "headline" : "90% Minimum Acceptance condition satisfied for Fortum's recommended voluntary cash tender offer for Elmera Group ASA",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Tender offer",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b043e2d4c05eebbfd5f8684ea694f38ba&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 10:20:00",
+      "published" : "2026-09-25 10:20:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255320.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af15ac617839c793fb35919124398b288"
+      } ],
+      "company" : "Fortum",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465292,
+      "categoryId" : 55,
+      "headline" : "0TO9 fördubblar omsättningen och rekryterar Erik Bäckström som vice VD för expansionen i Europa.",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b32bf193088a3f77dd2f260b73d25fd40&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 10:10:23",
+      "published" : "2026-09-25 10:10:23",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "0to9 AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465291,
+      "categoryId" : 436,
+      "headline" : "No. 85, 2026 - Fixing of coupons with effect as from 1 October 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1f376468459dd98ee8868265432b5ec0&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 10:09:28",
+      "published" : "2026-09-25 10:09:28",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "CF-fixing-of-coupon-with-effect-as-from-1-October-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9670c082614d982d29f447a6b88f357e"
+      } ],
+      "company" : "Nordea Kredit Realkreditaktieselskab",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465290,
+      "categoryId" : 436,
+      "headline" : "Nr. 85, 2026 - Fastsættelse af kuponrenter gældende fra 1. oktober 2026",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b8b3898d9d8178713fecd14c289104481&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 10:09:28",
+      "published" : "2026-09-25 10:09:28",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "CF-faststtelse-af-kuponrente-gldende-fra-1-oktober-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aaeba860cdf1b0784d8b65e74cd4c71d3"
+      } ],
+      "company" : "Nordea Kredit Realkreditaktieselskab",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465288,
+      "categoryId" : 72,
+      "headline" : "Josefin Dalum resigns as CFO of Nelly Group",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b335e153793f3e00b182b9411e089ae4c&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 10:00:00",
+      "published" : "2026-09-25 10:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Josefin Dalum resigns as CFO of Nelly Group.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad4ce89b2004c6d908f7e6cc952b5bfa1"
+      } ],
+      "company" : "Nelly Group AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465287,
+      "categoryId" : 75,
+      "headline" : "Change in Vaisala Corporation's number of series A and K shares",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Total number of voting rights and capital",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6cc47a6e4705b7105ec47c847ad58f5e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 10:00:00",
+      "published" : "2026-09-25 10:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Vaisala",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465284,
+      "categoryId" : 72,
+      "headline" : "Ændring i ledelse i Wealth Fund Partners A/S",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4172d530385a41a1bac5be6c7a31f696&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:39:11",
+      "published" : "2026-09-25 09:39:11",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Kapitalforeningen Wealth Invest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465283,
+      "categoryId" : 72,
+      "headline" : "Ændring i ledelse i Wealth Fund Partners A/S",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b96522eaa62b15f699da3b5fe1309a5af&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:38:06",
+      "published" : "2026-09-25 09:38:06",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Investeringsforeningen Wealth Invest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465282,
+      "categoryId" : 72,
+      "headline" : "Ændring i ledelse i Wealth Fund Partners A/S",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b65fb654deb62df76b34ee1e8f4e71f03&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:36:43",
+      "published" : "2026-09-25 09:36:43",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Kapitalforeningen BLS Invest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465281,
+      "categoryId" : 72,
+      "headline" : "Ændring i ledelse i Wealth Fund Partners A/S",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b467b07f4e577c6d317cefe4b87dde426&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:36:42",
+      "published" : "2026-09-25 09:36:42",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Investeringsforeningen Maj Invest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465279,
+      "categoryId" : 436,
+      "headline" : "Fastsættelse af rentekuponer for variabelt forrentede obligationer (EUR)",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bfbca6e01a53be0bff1e6aef7a52c9996&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 09:31:28",
+      "published" : "2026-09-25 09:31:28",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "DLR Kredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465278,
+      "categoryId" : 497,
+      "headline" : "Trophy Games Acquires Playrion SASU from Paradox Interactive and Upgrades Full-Year 2026 Guidance",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd5fb5543db2697adadd61589c09251b8&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:25:00",
+      "published" : "2026-09-25 09:25:00",
+      "market" : "First North Denmark",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Trophy Games Acquires Playrion SASU from Paradox Interactive and Upgrades Full-Year 2026 Guidance.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ace1de3722656b47947eec911af20a144"
+      } ],
+      "company" : "TROPHY GAMES Development A/S",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465276,
+      "categoryId" : 231,
+      "headline" : "Styrelseordförande i Tempest Security (publ) Anders Lönnebo ökar sitt innehav",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd917729a0141c2e23f746fb3e44e682b&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 09:01:06",
+      "published" : "2026-09-25 09:01:06",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "PRM-insynshandel_sept-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a708d8e8fc637bf0e6099edea3508da6a"
+      } ],
+      "company" : "Tempest Security AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465275,
+      "categoryId" : 301,
+      "headline" : "AS Pro Kapital Grupp announces that the condition for early redemption of its existing bonds has been fulfilled",
+      "language" : "en",
+      "languages" : [ "en", "et" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc63653128bf9dc527c98ddc4c0188a9e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:00:00",
+      "published" : "2026-09-25 09:00:00",
+      "market" : "Main Market, Tallinn",
+      "attachment" : [ ],
+      "company" : "Pro Kapital Grupp",
+      "cnsTypeId" : "25"
+    }, {
+      "disclosureId" : 1465274,
+      "categoryId" : 108,
+      "headline" : "AS Pro Kapital Grupp announces that the condition for early redemption of its existing bonds has been fulfilled",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b2a53675fd47eb48bea8b296b4001631d&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 09:00:00",
+      "published" : "2026-09-25 09:00:00",
+      "market" : "First North Sweden",
+      "attachment" : [ ],
+      "company" : "Pro Kapital Grupp",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465273,
+      "categoryId" : 436,
+      "headline" : "Realisation of Kesko's share-based commitment and incentive plan KPSP 2024",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd64af12e0a88e11d6e7fb4f4799e577e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:30:00",
+      "published" : "2026-09-25 08:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255246.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aada31d766595a37f2462a31bfa5c71ef"
+      } ],
+      "company" : "Kesko Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465272,
+      "categoryId" : 436,
+      "headline" : "Keskon osakepohjaisen sitouttamis- ja kannustinohjelman KPSP 2024 toteuma",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b016fd5c914f5027850c22ae5806028bc&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 08:30:00",
+      "published" : "2026-09-25 08:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255245.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af8c5cb3ea1af0d2ea4ba3e7571ff842d"
+      } ],
+      "company" : "Kesko Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465271,
+      "categoryId" : 55,
+      "headline" : "Gasporox medverkan på BioStock Investing in Life Science 2026",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b50b1ba8245a11830e78ff45ce2953361&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 08:30:00",
+      "published" : "2026-09-25 08:30:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Gasporox medverkan pa BioStock Investing in Life Science 2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad23c58ae9587242cbb35bd9040ae83f7"
+      } ],
+      "company" : "Gasporox AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465270,
+      "categoryId" : 497,
+      "headline" : "Cereno Scientific Reports Positive Topline Results from CS014 Phase I PK-bridging Study, Strengthening Intended Direct Path toward Phase IIb in PH-ILD",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b88be1c14b0d4d6ed19a43eca1a6064d8&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:14:00",
+      "published" : "2026-09-25 08:14:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "PDF.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a49b989a43523d4ec039b09a4631f06e9"
+      } ],
+      "company" : "Cereno Scientific AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465269,
+      "categoryId" : 55,
+      "headline" : "RESULT OF RIKSBANK AUCTIONS GOVERNMENT BONDS",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7488d3b8d50b51af153b79d55be7f320&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:05:00",
+      "published" : "2026-09-25 08:05:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Sveriges Riksbank",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465268,
+      "categoryId" : 55,
+      "headline" : "NCC bygger 7 mil högspänningsledningar i Västra Götaland",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1cb90659322e7053ea104057881ac083&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 08:00:13",
+      "published" : "2026-09-25 08:00:13",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255217.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7ad005fb896aa91de0d9e956d9252736"
+      } ],
+      "company" : "NCC AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465267,
+      "categoryId" : 55,
+      "headline" : "NCC to construct 70 kms of high-voltage power lines in Västra Götaland",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6dc5291867b1786d9d16b2c103812b3b&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:00:13",
+      "published" : "2026-09-25 08:00:13",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255218.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac1b8f3f603132cac7c7e2c23a8136369"
+      } ],
+      "company" : "NCC AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465266,
+      "categoryId" : 55,
+      "headline" : "Besqab produktionsstartar 32 nya bostäder i Vaxholm",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7c98d95bdb4d296fbe11d68cd2e18e5b&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 08:00:00",
+      "published" : "2026-09-25 08:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255235.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a243ac6461b245046ff5b5f59a302ecc3"
+      } ],
+      "company" : "Besqab AB(publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465265,
+      "categoryId" : 55,
+      "headline" : "Besqab starts production of 32 new homes in Vaxholm",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7ab0937291a43a07e9075f6d0a4587b9&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:00:00",
+      "published" : "2026-09-25 08:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255242.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac07ed8d54e2bb27d63188ab72ebe9534"
+      } ],
+      "company" : "Besqab AB(publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465264,
+      "categoryId" : 436,
+      "headline" : "Nominating committee ahead of Industrivärden's 2027 AGM",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4e581e05d4a1bb10336e43b69c639cd2&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 08:00:00",
+      "published" : "2026-09-25 08:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "260925 Valberedning Sammansattning Eng.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa61eaa47b4e361a72afa0a04ce8ee118"
+      } ],
+      "company" : "Industrivärden, AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465263,
+      "categoryId" : 75,
+      "headline" : "Agat Ejendomme har gennemført fortegningsemission",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Total number of voting rights and capital",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4c2050ae7d70afe20ca69fff9e058c16&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 07:59:00",
+      "published" : "2026-09-25 07:59:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Nr._ 8_Gennemfrelse af fortegningsemission.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a261bf0e0bce951eae653349be076a74c"
+      } ],
+      "company" : "Agat Ejendomme A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465262,
+      "categoryId" : 55,
+      "headline" : "Nomination Committee appointed for SmartCraft Group AB (publ)",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b69eebc6e06a3c329311ace405f745676&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:45:00",
+      "published" : "2026-09-25 07:45:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Nomination Committee appointed for SmartCraft Group AB publ.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae69c54527016ae88914aeede56f6db55"
+      } ],
+      "company" : "SmartCraft Group AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465260,
+      "categoryId" : 436,
+      "headline" : "Anmodning om suspension i enkelte afdelinger under Investeringsforeningen Danske Invest ",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9250fe5a956def0a12e7a5a1691b10db&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:38:36",
+      "published" : "2026-09-25 07:38:36",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Danske Invest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465245,
+      "categoryId" : 72,
+      "headline" : "On changes in the composition of the Board of Directors",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bfb94a69ab2818aa69fc180ba22cea590&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:38:14",
+      "published" : "2026-09-25 07:38:14",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "Rīgas kuģu būvētava",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465259,
+      "categoryId" : 55,
+      "headline" : "Kesla Plc Becomes Main Partner of Biathlete Inka Hämäläinen",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf78790eecdec4fb9b6c33466f1b84eb3&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:30:00",
+      "published" : "2026-09-25 07:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "2026_9_25_Press_Release_Kesla_Plc_Becomes_Main_Partner_of_Biathlete_Inka_Hamalainen.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a3c966d7008aeb5a9e79fa54a73aad0d4"
+      }, {
+        "mimetype" : "image/jpeg",
+        "fileName" : "2026_9_Inka_Hamalainen-32.jpg",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a0839aeb08cd8df4831bfc5ab537363ad"
+      }, {
+        "mimetype" : "image/jpeg",
+        "fileName" : "2026_9_Inka_Hamalainen-114.jpg",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aaa99e691b552916912abd0c002490393"
+      }, {
+        "mimetype" : "image/jpeg",
+        "fileName" : "2026_9_Inka_Hamalainen-58.jpg",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a25b1cfa9645bf5e48745df37ffbbaeba"
+      } ],
+      "company" : "Kesla Oyj",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465258,
+      "categoryId" : 55,
+      "headline" : "Construction begins on new Unika LSS home for children and young people in Nacka",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b87855f27d52c996c01f742d11c431d9c&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:30:00",
+      "published" : "2026-09-25 07:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Construction begins on new Unika LSS home for children and young people in Nacka.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a32ab3c2e8d2fb972bc76641155704a7f"
+      } ],
+      "company" : "Attendo AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465255,
+      "categoryId" : 66,
+      "headline" : "Notification of managers' and closely related parties' transactions with Dampskibsselskabet NORDEN A/S' shares in connection with share buy-back program",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0049f05239d3934899954177f179836c&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:16:00",
+      "published" : "2026-09-25 07:16:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Transactions By Persons Discharging Managerial Responsibilities And Persons.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a06d151d3c3953c4088eed2a1e557967d"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "No 226 Managers Transactions Etc.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a004c8e9cef31433309603d84544b4ccb"
+      } ],
+      "company" : "NORDEN",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465254,
+      "categoryId" : 108,
+      "headline" : "SciBase announces confirmed guarantee commitment in connection with ongoing rights issue",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc606f8e52d606b9e5871ddfde5c3a4d1&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:15:00",
+      "published" : "2026-09-25 07:15:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255213.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af3b5ded268e1e65a8af248ae72a22cc3"
+      } ],
+      "company" : "Scibase Holding AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465253,
+      "categoryId" : 108,
+      "headline" : "SciBase meddelar bekräftat garantiåtagande i samband med pågående företrädesemission",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b5d743c246f9d8916114e600fda6464d4&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 07:15:00",
+      "published" : "2026-09-25 07:15:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255208.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a09ff6c1b11c20e331444abd6a9ce4734"
+      } ],
+      "company" : "Scibase Holding AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465252,
+      "categoryId" : 69,
+      "headline" : "Dampskibsselskabet NORDEN A/S - weekly report on share buy-back",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1c4ab143f288b2f23e1acbe735099e1d&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:15:00",
+      "published" : "2026-09-25 07:15:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Appendix.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aff74c05a8311b9d06c10a447351b0e6f"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "No 225 Weekly Report On Share Buy Back.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aebea64785201b8edd18b32be4c5965ba"
+      } ],
+      "company" : "NORDEN",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465250,
+      "categoryId" : 436,
+      "headline" : "Composition of Boreo Plc's Shareholders' Nomination Committee",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb982cd8775a740b45785c4807da515b4&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:00:00",
+      "published" : "2026-09-25 07:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Boreo Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465249,
+      "categoryId" : 55,
+      "headline" : "SaveLend Group enters into factoring partnership with Kleer",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b373912691b6e784c725d1cb80bdb3bd9&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:00:00",
+      "published" : "2026-09-25 07:00:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "SaveLend Group enters into factoring partnership with Kleer.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/acd0da5ebf8e064cec2d41c3534a49843"
+      } ],
+      "company" : "SaveLend Group AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465248,
+      "categoryId" : 77,
+      "headline" : "Anmodning om suspension for afdelinger under Investeringsforeningen BankInvest",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Net Asset Value",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b961b8ad40213c802be1d99034203f607&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 07:00:00",
+      "published" : "2026-09-25 07:00:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Investeringsforeningen BankInvest",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465247,
+      "categoryId" : 55,
+      "headline" : "Sampo books an impairment loss on intangible assets related to its IT systems in Denmark",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=ba4e608de25f5ffd07b4a41e8729f3531&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 07:00:00",
+      "published" : "2026-09-25 07:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Sampo",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465244,
+      "categoryId" : 55,
+      "headline" : "Inission Løkken och Inission Halden blir Inission Norge",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be3540dda135c3deddb8e93ba028f5135&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 06:50:00",
+      "published" : "2026-09-25 06:50:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244878.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/adf8d11e433b719bd1a577fd157135ae0"
+      } ],
+      "company" : "Inission AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465243,
+      "categoryId" : 436,
+      "headline" : "Mortgage bond auction - Totalkredit A/S",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b33eb74c56a863ed055a65239bd2d766a&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:50:00",
+      "published" : "2026-09-25 06:50:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Mortgage Bond Auction_ Totalkredit A_S _ 25092026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af10fefd2bb4a49df58bdeeaaa14d9d0e"
+      } ],
+      "company" : "Totalkredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465242,
+      "categoryId" : 436,
+      "headline" : "Mortgage bond auction - Nykredit Realkredit A/S",
+      "language" : "en",
+      "languages" : [ "en", "da" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7035cebb24663b0e4e745a26c49103e6&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:50:00",
+      "published" : "2026-09-25 06:50:00",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Mortgage Bond Auction Nykredit Realkredit AS_ 25092026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a6501bd066c28366efbcbe3e0eea473ab"
+      } ],
+      "company" : "Nykredit Realkredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465241,
+      "categoryId" : 55,
+      "headline" : "HAKI Safety restructures recent Combisafe acquisition",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1e3869c0053f2ceed6b7f76a8e010647&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:45:00",
+      "published" : "2026-09-25 06:45:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "HAKI Safety restructures recent Combisafe acquisition.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9b7b22bd3a4b274e2ced663abea82981"
+      } ],
+      "company" : "HAKI Safety AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465240,
+      "categoryId" : 69,
+      "headline" : "Aktietilbagekøbsprogram",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9d2a9f6715a2bfb91318ee5ded1dcd70&lang=da&src=listed",
+      "releaseTime" : "2026-09-25 06:42:08",
+      "published" : "2026-09-25 06:42:08",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Meddelelse nr 48 i 2026 aktietilbagekbsprogram.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ab90710cc06ab0d96e92f1e75b81e4e56"
+      } ],
+      "company" : "Fast Ejendom Danmark",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465236,
+      "categoryId" : 108,
+      "headline" : "AS Agrova Baltics invites to a webinar on the financial results of 6 months 2026 and latest corporate news",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b3866cb3ed9e36ac79e4d35ac48b0a8d8&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:30:47",
+      "published" : "2026-09-25 06:30:47",
+      "market" : "First North Latvia",
+      "attachment" : [ ],
+      "company" : "Agrova Baltics",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465238,
+      "categoryId" : 501,
+      "headline" : "Improved profitability and focus on operational improvements",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Interim report (Q1 and Q3)",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb09ce20fc069dc9e9a259e1f96f62ab7&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:30:00",
+      "published" : "2026-09-25 06:30:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Ahlens Group AB publ Interim Report May 2026 July 2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac298079b24a8b70d6e46e4d3e407e4bf"
+      } ],
+      "company" : "Åhléns Group AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465235,
+      "categoryId" : 108,
+      "headline" : "Midsummer shares to trade on Cboe Europe",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b775a5ef7c733e8590f6f09f9e9f7b3b0&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:15:00",
+      "published" : "2026-09-25 06:15:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Midsummer shares to trade on Cboe Europe.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2d83202ceda918416977b478684ec85d"
+      } ],
+      "company" : "Midsummer AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465220,
+      "categoryId" : 428,
+      "headline" : "Update on the Public Offering of Senior Unsecured Preferred Bonds of AS Citadele banka",
+      "language" : "en",
+      "languages" : [ "en", "lv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0c09f0322ed2c0a555030ffd5ae0fd89&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Riga",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Updated_Final_Terms.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a8be90849c574a0890dca25f5d32df32d"
+      } ],
+      "company" : "Citadele banka",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465234,
+      "categoryId" : 436,
+      "headline" : "First day of trading in Linjemontage's shares on Nasdaq Stockholm",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9e352afb5fdfbcb811ae3d2829491160&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "First day of trading in Linjemontages shares on Nasdaq Stockholm.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7468c3a87cc6dcc5f1356e8ca452e0c5"
+      } ],
+      "company" : "Linjemontage I Grästorp AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465233,
+      "categoryId" : 109,
+      "headline" : "Muutos LapWall Oyj:n johtoryhmässä: Tiina Määttä LapWall Oyj:n talous- ja lakiasiainjohtajaksi",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Changes in board/management/certified adviser/auditor/liquidity provider",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb622945669677dc10dc05a6d981be26b&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "First North Finland",
+      "attachment" : [ {
+        "mimetype" : "image/jpeg",
+        "fileName" : "Tiina Maatta LapWall.jpg",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a1d9423722665da0936eae2cb5ee82481"
+      } ],
+      "company" : "LapWall Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465232,
+      "categoryId" : 436,
+      "headline" : "Munters Nomination Committee for the 2027 Annual General Meeting",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b2ab8d8c9990db4f9cb4703864517ef3a&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Munters Group AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465231,
+      "categoryId" : 436,
+      "headline" : "Munters valberedning inför årsstämman 2027",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc8a31d1635c71f10beb1ed1e60623e6c&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Munters Group AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465230,
+      "categoryId" : 436,
+      "headline" : "Evolution AB´s Nomination Committee for the 2027 Annual General Meeting",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b331faa2c8b4033c02ef6bd21b8d06710&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Evolution AB s Nomination Committee for the 2027 Annual General Meeting.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aec2e9c61461f3bc8d03fa021fbf9cd4f"
+      } ],
+      "company" : "Evolution AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465229,
+      "categoryId" : 55,
+      "headline" : "JM starting production of housing in Sollentuna",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b97dc9c4e622142b312d9a76d3e317be0&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "260925 JM starting production of housing in Sollentuna.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae6a53ec1d0c09b3a22a934a7132cddf1"
+      } ],
+      "company" : "JM AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465228,
+      "categoryId" : 436,
+      "headline" : "Castellum moves from four regions to two",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bbbfc621dcd736afab74fd98a7ebe8f7e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 06:00:00",
+      "published" : "2026-09-25 06:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Castellum moves from four regions to two.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa91c202880b23bec415877d29ecf8acb"
+      } ],
+      "company" : "Castellum AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465227,
+      "categoryId" : 55,
+      "headline" : "Wallenstam satsar på bostadsrätter i Årstaberg",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd57b1489c4b3960dd072753e609b70db&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 05:55:00",
+      "published" : "2026-09-25 05:55:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244841.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a700550937729ceae6d7b7794ddefec5e"
+      } ],
+      "company" : "Wallenstam AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465226,
+      "categoryId" : 55,
+      "headline" : "Dataproces Group A/S puts office property up for sale",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b95849645ebf7177206de45ee0f1d980b&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:50:51",
+      "published" : "2026-09-25 05:50:51",
+      "market" : "First North Denmark",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Download announcement as PDF.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a504c752e2ae3d4927368f0514a7c925e"
+      } ],
+      "company" : "Dataproces Group A/S",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465225,
+      "categoryId" : 69,
+      "headline" : "Sampo completes its share buyback programme",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bef041bd5646e05fcc408d4efa6f2ca74&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:40:00",
+      "published" : "2026-09-25 05:40:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Sampo",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465224,
+      "categoryId" : 102,
+      "headline" : "District Announces 2026 Year End Results",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Annual financial report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1c33e29d3382d446ddbcdbf0ff32a5a7&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:30:38",
+      "published" : "2026-09-25 05:30:38",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "2026.06.30 - District - FS June 30 2026 - FINAL.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7cf46cb8e6cff7cb03584d1bc79d2a0a"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "09255192.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a153fad68226679b8e005e26859a26fa9"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "2026.06.30 - District - MDA June 30 2026 - FINAL.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a58723ef2e847fa26796f84c91faef643"
+      } ],
+      "company" : "DIstrict Metals Corp.",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465223,
+      "categoryId" : 55,
+      "headline" : "Skanska divests second phase of H2Offices in Budapest, Hungary, for EUR 98M, about SEK 1.1 billion",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bcd0936a37795b06c39aa3f328cd5388e&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:30:00",
+      "published" : "2026-09-25 05:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245103.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a457c9a6f211477533e4ca9336d433158"
+      } ],
+      "company" : "Skanska AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465222,
+      "categoryId" : 55,
+      "headline" : "Skanska säljer den andra etappen av H2Offices i Budapest, Ungern, för EUR 98M, cirka 1,1 miljarder kronor",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb53f94ead749eb5703f45053788ff29b&lang=sv&src=listed",
+      "releaseTime" : "2026-09-25 05:30:00",
+      "published" : "2026-09-25 05:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245102.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af5f7c21c5aaf43529dfad300b9d4c2b6"
+      } ],
+      "company" : "Skanska AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465221,
+      "categoryId" : 69,
+      "headline" : "Sampo plc's share buybacks week 39/2026",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9c03224d620b8827e8ba8b4d3e9be655&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:30:00",
+      "published" : "2026-09-25 05:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "fileName" : "Sampo_share_buyback_week_39_2026.xlsx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4eb637bcb934a3866e98aa8c0c4d930e"
+      } ],
+      "company" : "Sampo",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465219,
+      "categoryId" : 69,
+      "headline" : "PPI Public Property Invest AB: Transactions carried out under the share buy-back program",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1a8239ecc5c7c67f6643190e4cfc3f03&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:00:00",
+      "published" : "2026-09-25 05:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Daily Share Buy Back Report 210926 To 240926.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a317705a5c930b4842b1a37d4f66d56dd"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "PPI Public Property Invest AB Transactions carried out under the share buy-back program.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4770a2741dc4b27325d787ad8c5353ea"
+      } ],
+      "company" : "PPI Public Property Invest AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465218,
+      "categoryId" : 55,
+      "headline" : "YIT continues the construction of XTX Markets' data center campus in Kajaani - delivers the fit-out and MEP works for the third data center",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=ba27f996aa942946b1811b8059536e9e8&lang=en&src=listed",
+      "releaseTime" : "2026-09-25 05:00:00",
+      "published" : "2026-09-25 05:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "YIT",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465217,
+      "categoryId" : 55,
+      "headline" : "YIT jatkaa XTX Marketsin datakeskuskampuksen rakentamista Kajaanissa - toteuttaa kolmannen datakeskuksen sisävalmistus- ja talotekniikkatyöt",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf4315a39ee4e798641aef6ae425589ed&lang=fi&src=listed",
+      "releaseTime" : "2026-09-25 05:00:00",
+      "published" : "2026-09-25 05:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "YIT",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465216,
+      "categoryId" : 428,
+      "headline" : "Eastnine completes acquisition of The Bridge",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b64714363f6bbab354061837c0be2a13a&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 22:45:00",
+      "published" : "2026-09-24 22:45:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245130.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/af481a6182547811bd4dda57b15c5dff8"
+      } ],
+      "company" : "Eastnine AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465215,
+      "categoryId" : 428,
+      "headline" : "Eastnine slutför förvärv av The Bridge",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bbda62cad4d6b285753d9b3bdb98a1c57&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 22:45:00",
+      "published" : "2026-09-24 22:45:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245129.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ac34a4b8bcdac8a3bae1ce4ad9b5678af"
+      } ],
+      "company" : "Eastnine AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465214,
+      "categoryId" : 436,
+      "headline" : "Lundin Gold Reports 204.26 g/t Au over 3.05 Metres at Bonza Sur; Quebrada Dorada Discovery Extends Gold Epithermal Trend to 8 km",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b082a6b014a2bd61d2a506d99afcedd21&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 21:00:00",
+      "published" : "2026-09-24 21:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "LundinGold_0924.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9daa992dea26492b3c2e9dc0c2348ba2"
+      } ],
+      "company" : "Lundin Gold Inc.",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465213,
+      "categoryId" : 151,
+      "headline" : "Reykjastræti ehf.: Birting grunnlýsingar",
+      "language" : "is",
+      "languages" : [ "is" ],
+      "cnsCategory" : "Final Bond Terms",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1d998e4e5cf9a24e2200dd9bfaa3a750&lang=is&src=listed",
+      "releaseTime" : "2026-09-24 20:22:10",
+      "published" : "2026-09-24 20:22:10",
+      "market" : "Main Market, Iceland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Grunnlysing-Reykjastrtis_2026_lokadrog-hrein.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a532d06ba285528e2c554b65c8404612a"
+      } ],
+      "company" : "Reykjastræti ehf.",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465212,
+      "categoryId" : 436,
+      "headline" : "Grant of Restricted Stock Units and Warrants to Employees in Genmab",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9abf97a48e351f04748cd100db775e31&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 18:32:12",
+      "published" : "2026-09-24 18:32:12",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "240926_CA38_Warrant and RSU grant.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad6b701664ff77facd85c8dc041ef0dd3"
+      } ],
+      "company" : "Genmab A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465211,
+      "categoryId" : 436,
+      "headline" : "Orkuveita Reykjavíkur - Green Bond Auction Results",
+      "language" : "en",
+      "languages" : [ "en", "is" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b019dbbfe09a8ec06313e7c44b9426f05&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 18:10:12",
+      "published" : "2026-09-24 18:10:12",
+      "market" : "Main Market, Iceland",
+      "attachment" : [ ],
+      "company" : "Orkuveita Reykjavíkur",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465210,
+      "categoryId" : 55,
+      "headline" : "Arwidsro tillkännager resultat från återköpserbjudande",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9c7bc583c571041a93e86b0c46b94533&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 16:30:00",
+      "published" : "2026-09-24 16:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Arwidsro tillkannager resultat fran aterkopserbjudande.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a590d249972853dd4aea9d1d658c93050"
+      } ],
+      "company" : "Arwidsro Fastighets AB (publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465209,
+      "categoryId" : 104,
+      "headline" : "Kaldvík AS: Notice of Extraordinary General Meeting",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Notice to general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4a3643d5126c8984c247717767516638&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:26:42",
+      "published" : "2026-09-24 16:26:42",
+      "market" : "First North Iceland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Kaldvik AS Notice of Extraordinary General Meeting 8 October 2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4f5179ac575af1e3989415e189b87135"
+      } ],
+      "company" : "Kaldvik AS",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465208,
+      "categoryId" : 497,
+      "headline" : "Nanexa and Novo enter into EUR 1.165 billion global license and collaboration agreement for long-acting injectables",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9fe3792e7c7e9a2cecda07a435a9c829&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:24:00",
+      "published" : "2026-09-24 16:24:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Nanexa and Novo enter into EUR 1.165 billion global license and collaboration agreement for long-acting injectables.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae9657536adc4a33854de41cc88189924"
+      } ],
+      "company" : "Nanexa AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465207,
+      "categoryId" : 64,
+      "headline" : "Announcement from Asmodee Group's annual general meeting",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Decisions of general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b267225396addd6a195f8bea923fda531&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:15:00",
+      "published" : "2026-09-24 16:15:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Announcement from Asmodee Groups annual general meeting.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a37060ecab84a4ffaea042230ff0823fb"
+      } ],
+      "company" : "Asmodee Group AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465205,
+      "categoryId" : 72,
+      "headline" : "Appointment of a new member of the Board of Directors of Holmström Fastigheter",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b185c38885856b62762db017abb272c16&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:00:00",
+      "published" : "2026-09-24 16:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Appointment of a new member of the Board of Directors of Holmstrom Fastigheter.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9a75e25332b287becf6a390fca08a3c1"
+      } ],
+      "company" : "Holmström Fastigheter Holding AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465204,
+      "categoryId" : 436,
+      "headline" : "The merger between Sveafastigheter and KlaraBo is expected to be completed on 30 September - last day of trading in KlaraBo shares on 28 September",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc58ba2a8bd4ddffe3af372442c26c3b0&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:00:00",
+      "published" : "2026-09-24 16:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "The merger between Sveafastigheter and KlaraBo is expected to be completed on 30 September - last day of trading in KlaraBo shares on 28 September.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aade445fbceda6ce9fbb5dbf749fa5bd6"
+      } ],
+      "company" : "Sveafastigheter AB (publ)",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465203,
+      "categoryId" : 436,
+      "headline" : "The merger between KlaraBo and Sveafastigheter is expected to be completed on 30 September - last day of trading in KlaraBo shares on 28 September",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b35fe82054883b27a317e174d8fd5f985&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 16:00:00",
+      "published" : "2026-09-24 16:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "The merger between KlaraBo and Sveafastigheter is expected to be completed on 30 September - last day of trading in KlaraBo shares on 28 September.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a08dfef970708139866283a0fbcdc7f40"
+      } ],
+      "company" : "KlaraBo Sverige AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465202,
+      "categoryId" : 436,
+      "headline" : "Konecranes commences a share buy-back program",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b6c76075a56e0f8fdae52799451f8355c&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:50:00",
+      "published" : "2026-09-24 15:50:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Konecranes Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465201,
+      "categoryId" : 436,
+      "headline" : "Konecranes aloittaa omien osakkeiden takaisinosto-ohjelman",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b8c4e5811c327c7c665948a819cf4a4cc&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 15:50:00",
+      "published" : "2026-09-24 15:50:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Konecranes Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465200,
+      "categoryId" : 428,
+      "headline" : "Inside information: Konecranes upgrades its financial targets and updates dividend policy as part of its accelerated growth strategy",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b4d6b5675f8528731e4cd8b804ce1e37f&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:45:00",
+      "published" : "2026-09-24 15:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Konecranes Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465199,
+      "categoryId" : 428,
+      "headline" : "Sisäpiiritieto: Konecranes päivittää taloudelliset tavoitteensa ja osinkopolitiikan osana nopeamman kasvun strategiaa",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b756807c23093adaeaa3fd2e149cadcef&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 15:45:00",
+      "published" : "2026-09-24 15:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Konecranes Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465197,
+      "categoryId" : 436,
+      "headline" : "IRLAB Appoints Janne Backman as New Chairman of the Board",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bfc37134145761cb8eb8438cb1aaf5e0f&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:30:00",
+      "published" : "2026-09-24 15:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "IRLAB Appoints Janne Backman as New Chairman of the Board.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7f341e4af92cd13f4883968af03012c1"
+      } ],
+      "company" : "IRLAB Therapeutics AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465196,
+      "categoryId" : 116,
+      "headline" : "Announcement from Coffee Stain Group's annual general meeting",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Decisions of general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b464223e1fe34fdff4171d27de4889a83&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:30:00",
+      "published" : "2026-09-24 15:30:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Announcement from Coffee Stain Groups annual general meeting.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa84f058ce2912defa04223e2861ce842"
+      } ],
+      "company" : "Coffee Stain Group AB",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465195,
+      "categoryId" : 67,
+      "headline" : "Netel Holding AB (publ) publishes a supplement to the prospectus in connection with the company's contemplated issue of senior secured bonds",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Prospectus/Announcement of Prospectus",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb5b7b7673eb9db214aae18435916de16&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:15:00",
+      "published" : "2026-09-24 15:15:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Netel Holding AB publ publishes a supplement to the prospectus in connection with the companys contemplated issue of senior secured bonds.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/abcf3c07a73e1a8adccfdd39092bf2f63"
+      } ],
+      "company" : "Netel Holding AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465194,
+      "categoryId" : 436,
+      "headline" : "Euroopan komissio hyväksyi ehdoitta yrityskaupan, jossa Kesko ostaa Ruotsin Dahlin ja Norjan ja Tanskan Brødrene Dahlin liiketoiminnot",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf46c08c61660cdfc81335fd9693832e6&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 15:00:00",
+      "published" : "2026-09-24 15:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245006.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a62e50fc45c89dd06d443b0594eca9066"
+      } ],
+      "company" : "Kesko Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465193,
+      "categoryId" : 436,
+      "headline" : "European Commission unconditionally approved the transaction in which Kesko acquires Dahl operations in Sweden, and Brødrene Dahl operations in Norway and Denmark",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b63e591a2de413a8c26b4ae05b2eb790a&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:00:00",
+      "published" : "2026-09-24 15:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09245007.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a012f520bbc5fff18d4a77830a53c655a"
+      } ],
+      "company" : "Kesko Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465192,
+      "categoryId" : 64,
+      "headline" : "Announcement from Embracer Group's Annual General Meeting",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Decisions of general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf73a311d5660e2d23e663548e213f75d&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 15:00:00",
+      "published" : "2026-09-24 15:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Announcement from Embracer Groups Annual General Meeting.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2ff4d4f3fae644a50a9786f38c0e5752"
+      } ],
+      "company" : "Embracer Group AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465191,
+      "categoryId" : 428,
+      "headline" : "CORRECTION: Announcement on changes in supervisory board of Amber Beverage Group",
+      "language" : "en",
+      "languages" : [ "en", "lv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b22c50e88eab6e9e5204a6cd8b07036ed&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:52:12",
+      "published" : "2026-09-24 14:52:12",
+      "market" : "Main Market, Riga",
+      "attachment" : [ ],
+      "company" : "Amber Beverage Group Holding S.à r.l.",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465174,
+      "categoryId" : 428,
+      "headline" : "Keystone Academic Solutions AS announces addition of minimum liquidity covenant to the written resolution initiated 21 September 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b28149c0026ec17a5044ca95db08b5c6a&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:30:56",
+      "published" : "2026-09-24 14:30:56",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ ],
+      "company" : "Keystone Academic Solutions AS",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465173,
+      "categoryId" : 55,
+      "headline" : "Alzinova's Phase II study with ALZ-101 accepted for presentation at international Alzheimer's conference",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b26028cae7f9a5c197dfce28f282dc62f&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:30:00",
+      "published" : "2026-09-24 14:30:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Alzinovas Phase II study with ALZ-101 accepted for presentation at international Alzheimers conference.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/acefdcf8c88a012eae850d6c926e746f0"
+      } ],
+      "company" : "Alzinova AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465172,
+      "categoryId" : 55,
+      "headline" : "Senzime secures additional major US hospital network contract, expanding adoption of its next-generation neuromuscular monitoring technology",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b46cdd963ced11f24ce01793f1d29a1e1&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:30:00",
+      "published" : "2026-09-24 14:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Senzime secures additional major US hospital network contract expanding adoption of its next-generation neuromuscular monitoring technology.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ace2b13bb1c92a235906cf309e1f19371"
+      } ],
+      "company" : "Senzime AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465170,
+      "categoryId" : 456,
+      "headline" : "A notice of the convening of the Extraordinary General Meeting of Shareholders of LITGRID AB ",
+      "language" : "en",
+      "languages" : [ "en", "lt" ],
+      "cnsCategory" : "General meeting of shareholders",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b03b7de11f122695e28a8a6e7fce109c5&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:10:00",
+      "published" : "2026-09-24 14:10:00",
+      "market" : "Main Market, Vilnius",
+      "attachment" : [ {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "fileName" : "2 Proxy form_EN 1.docx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9f9374b07efddcff5bd7bffd312f0777"
+      }, {
+        "mimetype" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "fileName" : "1 Voting ballot_EN 1.docx",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a17dbfa5eb51f4b9dfc2eb480119c75e6"
+      } ],
+      "company" : "LITGRID",
+      "cnsTypeId" : "15"
+    }, {
+      "disclosureId" : 1465169,
+      "categoryId" : 497,
+      "headline" : "Netum Group Plc: Inside information, profit warning: Netum Group Plc lowers its profitability guidance for 2026",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b00c3db821f57b8f97f691c6f76d65493&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:00:00",
+      "published" : "2026-09-24 14:00:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Netum Group Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465168,
+      "categoryId" : 55,
+      "headline" : "Remedy Entertainment Plc: CONTROL Resonant, Sequel to Multi-Award-Winning CONTROL, Out Now Worldwide",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc0c4b970bf80388b6266040d083aaaae&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 14:00:00",
+      "published" : "2026-09-24 14:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Remedy Entertainment Oyj",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465167,
+      "categoryId" : 144,
+      "headline" : "Copenhagen Capital A/S - Storaktionærmeddelelse",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b2eaaee4ed15ec663e612d5b5a27b9a29&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 13:44:52",
+      "published" : "2026-09-24 13:44:52",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "20260924 Storaktionrmeddelelse Atlas Equity ApS.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a7ba73684f2b79bb207c23bb73c6690b7"
+      } ],
+      "company" : "Copenhagen Capital A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465166,
+      "categoryId" : 144,
+      "headline" : "Copenhagen Capital A/S - Storaktionærmeddelelse",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b80a67568633ce0486a55fb455a532574&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 13:43:18",
+      "published" : "2026-09-24 13:43:18",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "20260924 Storaktionrmeddelelse CRL.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a8ff94392cf8a97bc599694fa7412045a"
+      } ],
+      "company" : "Copenhagen Capital A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465165,
+      "categoryId" : 66,
+      "headline" : "Copenhagen Capital A/S - Indberetning af ledende medarbejders transaktion",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b1e1682a74c9aa4b1102f1dd90fbb9abf&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 13:41:56",
+      "published" : "2026-09-24 13:41:56",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "20260924 Indberetning af ledende medarbejders kb CRL.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a83ed3c976ffaa6281a3f938a6b5871b8"
+      } ],
+      "company" : "Copenhagen Capital A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465164,
+      "categoryId" : 428,
+      "headline" : "Insiderinformation: Saga Furs' septemberauktion höjdpunkten under försäljningssäsongen - värdet på förmedlingsförsäljningen över 680 miljoner euro",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b220b5478ff047d62c90624c3e17d89f9&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 13:40:00",
+      "published" : "2026-09-24 13:40:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Saga Furs Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465163,
+      "categoryId" : 428,
+      "headline" : "Sisäpiiritieto: Saga Fursin syyskuun huutokauppa huipensi myyntikauden - välitysmyynnin arvo yli 680 miljoonaa euroa",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7c2a2f9594e0ea6c3d4c50b76ba6aecf&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 13:40:00",
+      "published" : "2026-09-24 13:40:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Saga Furs Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465162,
+      "categoryId" : 436,
+      "headline" : "Viking Line: Vuoden 2025 osingonjaon toisesta erästä",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc150968a6f98643be0b8ed58daced75c&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 13:30:00",
+      "published" : "2026-09-24 13:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09223739.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad490ab36b7ad5438fd3b9efd670a6583"
+      } ],
+      "company" : "Viking Line",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465161,
+      "categoryId" : 436,
+      "headline" : "Viking Line: Den andra raten av dividendutdelningen för 2025",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd42533c9574402ff16579d209cbf5c13&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 13:30:00",
+      "published" : "2026-09-24 13:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09223741.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad0cb8479583ec0074684fce7f39fa677"
+      } ],
+      "company" : "Viking Line",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465160,
+      "categoryId" : 436,
+      "headline" : "Viking Line: Second Instalment of the 2025 Dividend Distribution",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be87f0e2b601dc6550aad8bf7e78cf868&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 13:30:00",
+      "published" : "2026-09-24 13:30:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09223740.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a28789fce86c0966f92c8387a40da1de6"
+      } ],
+      "company" : "Viking Line",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465159,
+      "categoryId" : 55,
+      "headline" : "Anders Petré appointed Head of Water & Bioeconomy at Sdiptech",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b871677d4d852865b695c7a8186509f3b&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 13:30:00",
+      "published" : "2026-09-24 13:30:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Anders Petre appointed Head of Water  Bioeconomy at Sdiptech.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae922886abd9f95d8064f01225c4f964d"
+      } ],
+      "company" : "Sdiptech AB (publ)",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465157,
+      "categoryId" : 436,
+      "headline" : "Nominating committee for the 2027 annual general meeting in Bure",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b2bc352d935cbbe0143d8eb48f7a7e052&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 13:25:00",
+      "published" : "2026-09-24 13:25:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Nominating committee for the 2027 annual general meeting in Bure.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a23e6328964a69710661295f5cf52fb1c"
+      } ],
+      "company" : "Bure Equity  AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465156,
+      "categoryId" : 55,
+      "headline" : "Bioextrax får anslag om 2,4 MSEK från Wallenberg Wood Science Center för utveckling av PHA-nanokompositer",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bc655eb8bd33c5b256ab695a0f04eb298&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 13:15:00",
+      "published" : "2026-09-24 13:15:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Bioextrax far anslag om 24 MSEK fran Wallenberg Wood Science Center for utveckling av PHA-nanokompositer.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ade657a1250a09d0630a36656d1064389"
+      } ],
+      "company" : "Bioextrax AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465153,
+      "categoryId" : 436,
+      "headline" : "Admission to Trading Notice",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b642255afbf747848f2edcc6767935042&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 12:50:25",
+      "published" : "2026-09-24 12:50:25",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244952.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae67e126bafae01da15712a07d3a00435"
+      } ],
+      "company" : "Royal Bank of Canada",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465152,
+      "categoryId" : 69,
+      "headline" : "Transactions in connection with share buy-back programme 17-23 September 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bfe79cd361b710be393cdc75baac4563b&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 12:23:47",
+      "published" : "2026-09-24 12:23:47",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "260924_52_Company_Announcement.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a0189715aab67ca3e0e5f3edf6e266fa3"
+      }, {
+        "mimetype" : "application/pdf",
+        "fileName" : "260924_52_Appendix.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae3b8ef7fd2bf00b986c3837993c791f2"
+      } ],
+      "company" : "Vestas Wind Systems A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465151,
+      "categoryId" : 59,
+      "headline" : "Componenta's financial information and Annual General Meeting in 2027",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Financial Calendar",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b3bcd6dca5e0cfa1e11500aabbc4e4ac6&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 12:20:09",
+      "published" : "2026-09-24 12:20:09",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Componenta Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465148,
+      "categoryId" : 55,
+      "headline" : "Inbjudan till presentation av CAG:s rapport för kvartal 3, juli - september 2026",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7f47f7798dfd86918f5b0bcc5733f5f5&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 12:00:00",
+      "published" : "2026-09-24 12:00:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244757.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a87e33942f30f800924798f0a48c239d1"
+      } ],
+      "company" : "CAG Group AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465147,
+      "categoryId" : 72,
+      "headline" : "SELIGSON & CO OMX HELSINKI 25 EXCHANGE TRADED FUND UCITS ETF: BOARD OF THE MANAGEMENT COMPANY",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b585686ee663d3e7c7d1c527c60eaf7f6&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 12:00:00",
+      "published" : "2026-09-24 12:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Seligson & Co Rahastoyhtiö Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465146,
+      "categoryId" : 77,
+      "headline" : "Sparinvest SICAV - ophævelse af suspension",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Net Asset Value",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9e41c6f47d73e20718c27ec945e41d21&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 11:59:48",
+      "published" : "2026-09-24 11:59:48",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "Sparinvest SICAV",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465142,
+      "categoryId" : 55,
+      "headline" : "Gigasun signs new order in China worth SEK 5.8 million and reaches 408 MW installed capacity",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9627a429dbcbb461ec6a5602bacf4407&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:45:00",
+      "published" : "2026-09-24 11:45:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Gigasun signs new order in China worth SEK 5.8 million and reaches 408 MW installed capacity.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a9101c8acfc1ea4ffbedb5e2db816ba91"
+      } ],
+      "company" : "Gigasun AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465136,
+      "categoryId" : 55,
+      "headline" : "Aventus Full-Flight Winds Selected for Next-Generation FMS Development",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bffc310397a96cb191c30c00b4265138e&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:32:00",
+      "published" : "2026-09-24 11:32:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Aventus Full-Flight Winds Selected for Next-Generation FMS Development.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a152dc4bc527c4796a91b439fcae423ad"
+      } ],
+      "company" : "Avtech Sweden AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465134,
+      "categoryId" : 436,
+      "headline" : "Nr. 84, 2026 - Fastsættelse af kuponrenter gældende fra 1. oktober 2026",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b795c9bd32f6d456ff7005eb257ceb22b&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 11:28:01",
+      "published" : "2026-09-24 11:28:01",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Euribor3-faststtelse-af-kuponrente-gldende-fra-1-oktober-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a491b89d36c15637b970603ffa1c6f4b5"
+      } ],
+      "company" : "Nordea Kredit Realkreditaktieselskab",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465133,
+      "categoryId" : 436,
+      "headline" : "No. 84, 2026 - Fixing of coupons with effect as from 1 October 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b43d2cec0bddbedf11ae08cdc544da3d5&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:28:01",
+      "published" : "2026-09-24 11:28:01",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Euribor3-fixing-of-coupon-with-effect-as-from-1-October-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a2aad9de4ac4fb3c9581c582265024ba0"
+      } ],
+      "company" : "Nordea Kredit Realkreditaktieselskab",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465132,
+      "categoryId" : 55,
+      "headline" : "Tobii launches local Webcam eye tracking for research, enabling controlled on-site studies",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0c1266b4c317bbfb5afd066950109135&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:24:00",
+      "published" : "2026-09-24 11:24:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Tobii launches local Webcam eye tracking for research enabling controlled on-site studies.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a17cf4e95b8fc31017514bb6b060aa50d"
+      } ],
+      "company" : "TOBII AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465131,
+      "categoryId" : 70,
+      "headline" : "Verve Group Media SE: Verve Announces Expected Timetable for Relocation to Ireland and Proposed Suspension of Trading for One Day",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Corporate Action",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b2b1c0528e4a3b5b3180fe8ad22e3c45e&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:21:11",
+      "published" : "2026-09-24 11:21:11",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "20260924_VER_CN_RelocationTrading_eng_fin.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a656d628b9c648b68b4b3f22db1f06fa0"
+      } ],
+      "company" : "Verve Group Media SE",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465130,
+      "categoryId" : 144,
+      "headline" : "Major Shareholder Announcement",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b0f88f3aadd91d043a6cd1e9dbaac457f&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:15:28",
+      "published" : "2026-09-24 11:15:28",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "BO_2618_Major shareholder announcement_UBS.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a525466b1744b6a7aaa37ac93a2c883c8"
+      } ],
+      "company" : "Bang & Olufsen A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465129,
+      "categoryId" : 62,
+      "headline" : "Invitation to attend the Extraordinary General Meeting of Norion Bank AB (publ)",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Notice to general meeting",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb80395b633f9b39be98f7ee4dd87b77a&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:15:00",
+      "published" : "2026-09-24 11:15:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Invitation to attend the Extraordinary General Meeting of Norion Bank AB publ.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a3effbb6477790cedc21592d6d4a880c3"
+      } ],
+      "company" : "Norion Bank AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465126,
+      "categoryId" : 436,
+      "headline" : "Nomination Committee for the Saab Annual General Meeting 2027",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bbffc09f88e071b13768ff4a9d3da18f6&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 11:00:00",
+      "published" : "2026-09-24 11:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244783.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4cae2f1d49740ffbdb91c43b884d19cb"
+      } ],
+      "company" : "SAAB AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465125,
+      "categoryId" : 436,
+      "headline" : "Valberedning inför Saabs årsstämma 2027",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b8141b173f18678043293d3a51c4a3fae&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 11:00:00",
+      "published" : "2026-09-24 11:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244797.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a76430b5a6c9dba4f17cc4d089b2ae8c0"
+      } ],
+      "company" : "SAAB AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465124,
+      "categoryId" : 66,
+      "headline" : "Nykredit Realkredit A/S: Ledende medarbejdere og disses nærtstående transaktioner",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Managers' Transactions",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b58a07071af0923098827bfcaa7ecfbd0&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 10:54:31",
+      "published" : "2026-09-24 10:54:31",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "2424857_R_Rapporter.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa6216c787c7ec0a6a77e04b250719614"
+      } ],
+      "company" : "Nykredit Realkredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465123,
+      "categoryId" : 436,
+      "headline" : "Fixing of coupon rates - Nykredit Realkredit A/S",
+      "language" : "en",
+      "languages" : [ "en", "da" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be50141fd61fe0e46363828ca9a39a457&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 10:47:15",
+      "published" : "2026-09-24 10:47:15",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Fixing of coupon rates - Nykredit Realkredit - 20260924.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad37ebfff6ce394ee9ca1559eec57e818"
+      } ],
+      "company" : "Nykredit Realkredit A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465112,
+      "categoryId" : 72,
+      "headline" : "Change in Aspocomp's Management Team - Ville Raatikainen has been appointed Aspocomp's Chief Engineering and Technology Officer",
+      "language" : "en",
+      "languages" : [ "en", "fi" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b7bf143a50009f91c0bee87078c7eeb5c&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 10:00:00",
+      "published" : "2026-09-24 10:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Aspocomp Group Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465111,
+      "categoryId" : 436,
+      "headline" : "Nomination Committee for the Annual General Meeting 2027",
+      "language" : "en",
+      "languages" : [ "en", "sv" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf128bd5803edda66cbf2580f7c20f480&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 10:00:00",
+      "published" : "2026-09-24 10:00:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Nomination Committee for the Annual General Meeting 2027.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad08ab6b7d721d6869d6820ed44606e6e"
+      } ],
+      "company" : "CTT Systems AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465106,
+      "categoryId" : 428,
+      "headline" : "International Credit Rating Agency S&P Global Ratings Publishes Updated Report on AS Augstsprieguma tīkls",
+      "language" : "en",
+      "languages" : [ "lv", "en" ],
+      "cnsCategory" : "Inside information",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb1a6410cda82990dcf6986e1f7741d22&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:56:55",
+      "published" : "2026-09-24 09:56:55",
+      "market" : "Main Market, Riga",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "TearSheet_AugstspriegumaTikls_Sep-24-2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ad20f86d207c3be705fb79715006da80a"
+      } ],
+      "company" : "Augstsprieguma tīkls",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465107,
+      "categoryId" : 55,
+      "headline" : "Valberedning utsedd inför Genovas årsstämma 2027",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b352a646b358bd05cf4bb8799b1d75542&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 09:45:00",
+      "published" : "2026-09-24 09:45:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244782.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae08c1f1c51eae5e4aba64189fff2e870"
+      } ],
+      "company" : "Genova Property Group AB",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465105,
+      "categoryId" : 108,
+      "headline" : "Sunborn International Plc establishes a new subsidiary company",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bdcec1732331e51a9554696dc4477bfb7&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:36:09",
+      "published" : "2026-09-24 09:36:09",
+      "market" : "First North Finland",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Download announcement as PDF.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa90cc8bc1f344899f034447b54fff2a5"
+      } ],
+      "company" : "Sunborn International Plc",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465104,
+      "categoryId" : 153,
+      "headline" : "MORGAN STANLEY B.V.: Interim Financial Report - 30 June 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Interim report (Q1 and Q3)",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b759fe8a1e8d986d0c6bbe61511c64743&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:36:00",
+      "published" : "2026-09-24 09:36:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "5914442cMorgan_Stanley_B.V._-_Interims_FS_2026_en.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a4603400638b557483ab2eb0c4e0a9489"
+      } ],
+      "company" : "Morgan Stanley B.V",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465102,
+      "categoryId" : 72,
+      "headline" : "Martin Frandsen Tobberup handing over the CEO position of BoligPortal to Anders Dahl on 1 October 2026",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Changes board/management/auditors",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be658a81bfe36d74471ca198a95888927&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:28:39",
+      "published" : "2026-09-24 09:28:39",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ ],
+      "company" : "North Media A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465101,
+      "categoryId" : 144,
+      "headline" : "Correction: Oriola Corporation: Notification of a change in shareholding according to Chapter 9, Section 10 of the Securities Market Act",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b75c95fd7fc816ac7b31172bee5c4e365&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:15:00",
+      "published" : "2026-09-24 09:15:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244768.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a226c185f74c96504367b47a2557ce44b"
+      } ],
+      "company" : "Oriola Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465100,
+      "categoryId" : 144,
+      "headline" : "Korjaus: Oriola Oyj: Arvopaperimarkkinalain 9 luvun 10. pykälän mukainen liputusilmoitus",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Major shareholder announcements",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bd8e9f4b96a209e26122a1baed2e392c4&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 09:15:00",
+      "published" : "2026-09-24 09:15:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "09244767.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a3b19532c44aa878ab301212a5ffa2f07"
+      } ],
+      "company" : "Oriola Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465099,
+      "categoryId" : 502,
+      "headline" : "Fondia Plc: Financial Reporting in 2027",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Financial calendar",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bb3487c57eb6632b16bf816f03ad64bac&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:15:00",
+      "published" : "2026-09-24 09:15:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Fondia Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465098,
+      "categoryId" : 502,
+      "headline" : "Fondia Oyj: Taloudellisten katsausten julkistamisajankohdat 2027",
+      "language" : "fi",
+      "languages" : [ "fi" ],
+      "cnsCategory" : "Financial calendar",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b9a675306e1bb195fde235dba7ced2548&lang=fi&src=listed",
+      "releaseTime" : "2026-09-24 09:15:00",
+      "published" : "2026-09-24 09:15:00",
+      "market" : "First North Finland",
+      "attachment" : [ ],
+      "company" : "Fondia Oyj",
+      "cnsTypeId" : "11"
+    }, {
+      "disclosureId" : 1465095,
+      "categoryId" : 59,
+      "headline" : "Coloplast A/S - Financial Calendar 2026/27",
+      "language" : "en",
+      "languages" : [ "da", "en" ],
+      "cnsCategory" : "Financial Calendar",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b5b1fd169e3560dcab7973f0fcf7937f7&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:00:23",
+      "published" : "2026-09-24 09:00:23",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "08_2026_Financial Calendar_2026-27.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a877fdabfd2d53a648f214b477b4bb913"
+      } ],
+      "company" : "Coloplast A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465096,
+      "categoryId" : 69,
+      "headline" : "ABB  Ltd: ABB share buybacks - September 17, 2026 - September 23, 2026",
+      "language" : "en",
+      "languages" : [ "en" ],
+      "cnsCategory" : "Changes in company's own shares",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b35c270a226763c3a64d37240c9529553&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:00:01",
+      "published" : "2026-09-24 09:00:01",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "ABB_share_buybacks_Sep_17_2026_-_Sep_23_2026.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a0edcb83584b602f22761b7d9b7b4cd66"
+      } ],
+      "company" : "ABB Ltd",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465094,
+      "categoryId" : 75,
+      "headline" : "Incap Corporation: Incap cancels repurchased shares",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Total number of voting rights and capital",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=b47cf0e1352eb7c0a23ce85bc09a99f56&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 09:00:00",
+      "published" : "2026-09-24 09:00:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "Incap Oyj",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465092,
+      "categoryId" : 67,
+      "headline" : "BI Erhvervsejendomme A/S - Informationsdokument",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Prospectus/Announcement of Prospectus",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=be604c7be058866fcb7877a10f966f507&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 08:49:36",
+      "published" : "2026-09-24 08:49:36",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Informationsdokument BI Erhvervsejendomme AS 24.09.2026 inkl. bilag FINAL clean.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a82a97696c70c15a50389da347cff1942"
+      } ],
+      "company" : "BI Erhvervsejendomme A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465090,
+      "categoryId" : 78,
+      "headline" : "BI Erhvervsejendomme A/S - Halvårsrapport 2026",
+      "language" : "da",
+      "languages" : [ "da" ],
+      "cnsCategory" : "Half Year financial report",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=ba816758ae478d164c028b65726a6eae1&lang=da&src=listed",
+      "releaseTime" : "2026-09-24 08:48:35",
+      "published" : "2026-09-24 08:48:35",
+      "market" : "Main Market, Copenhagen",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "2026 Halvarsrapport BI Erhvervsejendomme AS.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/aa8bb03f348709f3caf500d28d2780061"
+      } ],
+      "company" : "BI Erhvervsejendomme A/S",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465088,
+      "categoryId" : 55,
+      "headline" : "NoHo Partners to provide restaurant services at Vulcan Spa, to be built in Turku",
+      "language" : "en",
+      "languages" : [ "fi", "en" ],
+      "cnsCategory" : "Investor News",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bf363f89fa35a93075aba54db9c244fa9&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 08:45:00",
+      "published" : "2026-09-24 08:45:00",
+      "market" : "Main Market, Helsinki",
+      "attachment" : [ ],
+      "company" : "NoHo Partners Oyj",
+      "cnsTypeId" : "3"
+    }, {
+      "disclosureId" : 1465085,
+      "categoryId" : 436,
+      "headline" : "Morrow Bank AB - Nomination Committee for the Annual General Meeting 2027 appointed",
+      "language" : "en",
+      "languages" : [ "sv", "en" ],
+      "cnsCategory" : "Other information disclosed according to the rules of the Exchange",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=bce2a4bdf096881a9134fe662d45875a7&lang=en&src=listed",
+      "releaseTime" : "2026-09-24 08:36:00",
+      "published" : "2026-09-24 08:36:00",
+      "market" : "Main Market, Stockholm",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Morrow Bank AB - Nomination Committee for the Annual General Meeting 2027 appointed.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/a912c872f773530b3c52197a95fc84e5e"
+      } ],
+      "company" : "Morrow Bank AB",
+      "cnsTypeId" : "6"
+    }, {
+      "disclosureId" : 1465084,
+      "categoryId" : 108,
+      "headline" : "Exsitec Holding AB (publ): Valberedning inför årsstämman 2027",
+      "language" : "sv",
+      "languages" : [ "sv" ],
+      "cnsCategory" : "Company Announcement",
+      "messageUrl" : "https://view.news.eu.nasdaq.com/view?id=baf8d7c44e30df43646aad71907959942&lang=sv&src=listed",
+      "releaseTime" : "2026-09-24 08:30:00",
+      "published" : "2026-09-24 08:30:00",
+      "market" : "First North Sweden",
+      "attachment" : [ {
+        "mimetype" : "application/pdf",
+        "fileName" : "Exsitec Holding AB publ Valberedning infor arsstamman 2027.pdf",
+        "attachmentUrl" : "https://attachment.news.eu.nasdaq.com/ae389a7d56ef113759e1c683191006e85"
+      } ],
+      "company" : "Exsitec Holding AB",
+      "cnsTypeId" : "11"
+    } ]
+  },
+  "count" : 10000
+}
