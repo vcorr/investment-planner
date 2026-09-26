@@ -20,7 +20,7 @@ The question it answers: are Claude's market-adjusted 5-day predictions better t
 7. applies the rules (code sets stops, sizes and the cost hurdle) and simulates the orders;
 8. writes the daily report.
 
-**A news poller** (Supabase Cron and an Edge Function) collects feed items every 5 minutes.
+**A news poller** (Supabase Cron and an Edge Function) collects company announcements hourly. The daily job fetches once more just before the 09:15 cut-off, so every item published before it can enter that day's packet.
 
 **A web interface on Firebase Hosting,** reading Supabase directly, visible only to you:
 - performance against the benchmark;

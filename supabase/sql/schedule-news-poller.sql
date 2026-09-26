@@ -1,4 +1,5 @@
--- Schedules the news-poller Edge Function every 5 minutes with pg_cron and pg_net.
+-- Schedules the news-poller Edge Function hourly, on the hour, with pg_cron and pg_net.
+-- Hourly is enough: a page covers 2-3 days, and the daily job fetches once more just before the 09:15 cut-off.
 --
 -- How to apply (once, after deploying the function):
 -- 1. Store two Vault secrets in the SQL editor. Never commit their values:
@@ -19,7 +20,7 @@ create extension if not exists pg_net with schema extensions;
 
 select cron.schedule(
   'news-poller',
-  '*/5 * * * *',
+  '0 * * * *',
   $$
   select net.http_post(
     url := (select decrypted_secret from vault.decrypted_secrets where name = 'news_poller_url'),
