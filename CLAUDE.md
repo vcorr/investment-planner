@@ -22,7 +22,7 @@ This file carries a planning conversation held in a Claude Code web session on 2
 - Code and identifiers in English; **documentation and reports in British English**.
 - Do not put model identifiers in commits, PRs or code comments.
 
-## About Vasco (how to talk to him)
+## About Vasco
 
 Preferences stated for this work:
 - Reply in Finnish when written to in Finnish. In English, reply in refined, concise British English; gently correct grammar slips.
