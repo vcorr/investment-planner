@@ -1,5 +1,6 @@
 import {
   bigint,
+  boolean,
   char,
   date,
   index,
@@ -119,6 +120,29 @@ export const newsItems = pgTable(
     source: text("source").notNull(),
   },
   (t) => [index("news_items_released_at_idx").on(t.releasedAt)],
+).enableRLS();
+
+/**
+ * One row per news-poller run, so a quiet period can be told apart from a broken poller.
+ * The poller deletes rows older than 90 days at the end of each run.
+ */
+export const newsPollRuns = pgTable(
+  "news_poll_runs",
+  {
+    id: serial("id").primaryKey(),
+    startedAt: timestamp("started_at", { withTimezone: true }).notNull(),
+    finishedAt: timestamp("finished_at", { withTimezone: true }).notNull().defaultNow(),
+    /** "schedule" (Supabase Cron), "cutoff" (the daily job before the 09:15 cut-off) or "manual". */
+    trigger: text("trigger").notNull(),
+    fetched: integer("fetched"),
+    inScope: integer("in_scope"),
+    inserted: integer("inserted"),
+    pages: integer("pages"),
+    gap: boolean("gap"),
+    /** Set when the run failed; the counts are then null. */
+    error: text("error"),
+  },
+  (t) => [index("news_poll_runs_started_at_idx").on(t.startedAt)],
 ).enableRLS();
 
 /** Findings from docs/verification.md, one row per V-item. */

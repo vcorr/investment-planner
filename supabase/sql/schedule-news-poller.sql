@@ -29,7 +29,7 @@ select cron.schedule(
       'Content-Type', 'application/json',
       'apikey', (select decrypted_secret from vault.decrypted_secrets where name = 'news_poller_key')
     ),
-    body := '{}'::jsonb,
+    body := '{"trigger": "schedule"}'::jsonb,
     -- Catch-up after downtime fetches up to 5 pages with pauses between them; allow a minute.
     timeout_milliseconds := 60000
   );

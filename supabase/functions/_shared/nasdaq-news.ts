@@ -187,3 +187,30 @@ async function sha256Hex(text: string): Promise<string> {
   const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
   return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, "0")).join("");
 }
+
+// ---- Run log ------------------------------------------------------------------------------------------------
+
+/** Poll-run log rows older than this are deleted at the end of each run. */
+export const RUN_LOG_RETENTION_DAYS = 90;
+
+export type PollTrigger = "schedule" | "cutoff" | "manual";
+const TRIGGERS: ReadonlySet<string> = new Set(["schedule", "cutoff", "manual"]);
+
+/**
+ * Reads `{"trigger": "..."}` from a request body. A missing or empty body means "manual";
+ * an unknown trigger is an error rather than a guess.
+ */
+export function parseTrigger(body: string): PollTrigger {
+  if (body.trim() === "") return "manual";
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(body);
+  } catch {
+    throw new Error("Request body is not JSON");
+  }
+  if (parsed === null || typeof parsed !== "object" || Array.isArray(parsed)) throw new Error("Request body must be a JSON object");
+  const trigger = (parsed as Record<string, unknown>).trigger;
+  if (trigger === undefined) return "manual";
+  if (typeof trigger !== "string" || !TRIGGERS.has(trigger)) throw new Error(`Unknown trigger: ${JSON.stringify(trigger)}`);
+  return trigger as PollTrigger;
+}

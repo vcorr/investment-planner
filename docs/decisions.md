@@ -17,6 +17,7 @@ Decisions only Vasco can make (brief §21), and amendments to the brief agreed b
 | D9 | Hosting split (2026-09-26) | **Supabase Free plus Google Cloud, instead of Neon** (brief §5). Aim: stay inside free allowances. See A12 and `docs/architecture.md` |
 | D10 | Price source and exchanges (2026-09-26) | **Nasdaq Nordic's public website API instead of EODHD; Oslo dropped.** Universe: Nasdaq Helsinki, Stockholm and Copenhagen, Main Market and First North. No paid data. See A13 |
 | D11 | News storage (2026-09-26) | **Store all company announcements for Helsinki, Stockholm and Copenhagen (Main Market and First North)** from now on, not only the development sample: about 70-85 a day, headlines and metadata only, about 5 MB over two months (ASSUMED 0.5 KB per item). Reason: the source keeps only its latest ~10,000 items (V23), so history cannot be refetched later, and the scored month needs news for the full universe and its peers |
+| D12 | News poll log and history (2026-09-26) | **Log every poll run** in `news_poll_runs` (time, trigger, counts, gap, error), so a quiet period can be told apart from a broken poller; the poller deletes rows older than 90 days, which keeps the log through the scored month, the verdict and a possible extension month. **Older announcements are not backfilled** (Vasco): collection starts from 16 Sep 2026, the first run |
 
 ## Amendments accepted
 

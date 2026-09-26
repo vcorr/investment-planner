@@ -10,6 +10,7 @@ import {
   newsQueryUrl,
   PAGE_SIZE,
   parseNewsPage,
+  parseTrigger,
   utcIso,
 } from "../supabase/functions/_shared/nasdaq-news.js";
 import { canonicalJson as settingsCanonicalJson } from "../src/settings/settings.js";
@@ -229,5 +230,21 @@ describe("decideNextPage", () => {
     expect(decideNextPage({ pageIds, storedIds: new Set(), itemCount: page.itemCount, pagesFetched: 1 }).fetchNext).toBe(true);
     const again = decideNextPage({ pageIds, storedIds: new Set(pageIds.slice(-1)), itemCount: page.itemCount, pagesFetched: 1 });
     expect(again).toEqual({ fetchNext: false, gap: false });
+  });
+});
+
+describe("parseTrigger", () => {
+  it("reads the trigger the schedule sends", () => {
+    expect(parseTrigger('{"trigger": "schedule"}')).toBe("schedule");
+    expect(parseTrigger('{"trigger": "cutoff"}')).toBe("cutoff");
+  });
+
+  it("treats an empty body or no trigger as manual", () => {
+    expect(parseTrigger("")).toBe("manual");
+    expect(parseTrigger("{}")).toBe("manual");
+  });
+
+  it.each(['{"trigger": "hourly"}', '{"trigger": 1}', "[]", "null", "not json"])("rejects %s", (body) => {
+    expect(() => parseTrigger(body)).toThrow();
   });
 });

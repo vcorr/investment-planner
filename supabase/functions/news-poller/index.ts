@@ -6,7 +6,16 @@
 import "@supabase/functions-js/edge-runtime.d.ts";
 import { withSupabase } from "@supabase/server";
 import postgres from "postgres";
-import { decideNextPage, newsQueryUrl, PAGE_SIZE, parseNewsPage, type NewsRow } from "../_shared/nasdaq-news.ts";
+import {
+  decideNextPage,
+  newsQueryUrl,
+  PAGE_SIZE,
+  parseNewsPage,
+  parseTrigger,
+  RUN_LOG_RETENTION_DAYS,
+  type NewsRow,
+  type PollTrigger,
+} from "../_shared/nasdaq-news.ts";
 
 const REQUEST_TIMEOUT_MS = 30_000;
 /** Pause between pages during catch-up, to stay polite towards an unofficial API. */
@@ -102,8 +111,24 @@ async function poll(sql: Sql): Promise<PollResult> {
   }
 }
 
+/** One row per run in `news_poll_runs`, then deletes rows past the retention period. */
+async function logRun(sql: Sql, startedAt: Date, trigger: PollTrigger, result: PollResult | null, error: string | null) {
+  await sql`
+    insert into news_poll_runs (started_at, trigger, fetched, in_scope, inserted, pages, gap, error)
+    values (${startedAt}, ${trigger}, ${result?.fetched ?? null}, ${result?.inScope ?? null}, ${result?.inserted ?? null},
+            ${result?.pages ?? null}, ${result?.gap ?? null}, ${error})`;
+  await sql`delete from news_poll_runs where started_at < now() - make_interval(days => ${RUN_LOG_RETENTION_DAYS})`;
+}
+
 export default {
-  fetch: withSupabase({ auth: "secret" }, async () => {
+  fetch: withSupabase({ auth: "secret" }, async (req: Request) => {
+    const startedAt = new Date();
+    let trigger: PollTrigger;
+    try {
+      trigger = parseTrigger(await req.text());
+    } catch (error) {
+      return Response.json({ error: error instanceof Error ? error.message : String(error) }, { status: 400 });
+    }
     const dbUrl = Deno.env.get("SUPABASE_DB_URL");
     if (!dbUrl) return Response.json({ error: "SUPABASE_DB_URL is not set" }, { status: 500 });
     // prepare: false, because SUPABASE_DB_URL may point at the transaction pooler.
@@ -111,11 +136,14 @@ export default {
     try {
       const result = await poll(sql);
       if (result.gap) console.warn("news-poller: page cap reached without overlap; older items may be missing", result);
-      return Response.json(result);
+      await logRun(sql, startedAt, trigger, result, null);
+      return Response.json({ trigger, ...result });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       console.error("news-poller failed:", message);
-      return Response.json({ error: message }, { status: 500 });
+      // Best effort: if the database itself is the problem, this fails too, and Supabase's own logs remain.
+      await logRun(sql, startedAt, trigger, null, message).catch((e) => console.error("news-poller: run log failed:", e));
+      return Response.json({ trigger, error: message }, { status: 500 });
     } finally {
       await sql.end({ timeout: 5 });
     }
