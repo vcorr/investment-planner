@@ -182,3 +182,9 @@ This cloud development container's network policy blocks the data hosts; `curl` 
 `eodhd.com`, `data-api.ecb.europa.eu`, `www.ecb.europa.eu`, `api.news.eu.nasdaq.com`, `newsweb.oslobors.no`, `yle.fi`, `www.kauppalehti.fi`, `www.fi.se`, and the Neon host once the database exists.
 
 Change it in the environment's settings (Network access), either by allowing these domains or choosing a broader access level.
+
+## Added 2026-09-26
+
+| # | Item | Finding | Status |
+|---|---|---|---|
+| V22 | Free price source for Nasdaq Nordic | `api.nasdaq.com/api/nordic/instruments/TX50063/chart/download?assetClass=SHARES&fromDate=2025-01-01&toDate=2026-09-25` returned 435 daily rows for Nokia (2025-01-02 to 2026-09-25) with fields "Opening price", "High price", "Low price", "Closing price", "Average price", "Total volume", "Turnover", "Trades". Screener (`/api/nordic/screener/shares`, category MAIN_MARKET or FIRST_NORTH, market HEL, STO or CPH) lists ISIN, orderbook ID and sector. Market codes: HEL, STO, CPH, ICE. Orderbook IDs are `TX…` (post-INET). No Oslo. Terms of use not found | SOURCED (tested 2026-09-26); terms UNVERIFIED |

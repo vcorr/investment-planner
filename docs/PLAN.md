@@ -4,14 +4,14 @@ Status as of 2026-09-26. Sources: `BRIEF.md` (the brief), `docs/decisions.md` (d
 
 ## 1. What it is
 
-A one-month, forward-only paper experiment. A simulated 5,000 € portfolio of Nordic shares is managed every weekday by Claude, reading company news and market signals, within fixed rules and Nordnet's real Taso 4 costs. No real money and no broker.
+A one-month, forward-only paper experiment. A simulated 5,000 € portfolio of Nasdaq Nordic shares (Helsinki, Stockholm, Copenhagen) is managed every weekday by Claude, reading company news and market signals, within fixed rules and Nordnet's real Taso 4 costs. No real money and no broker.
 
 The question it answers: are Claude's market-adjusted 5-day predictions better than chance and better than simple baselines, and can the portfolio keep pace with the market after costs?
 
 ## 2. How it works
 
 **Every weekday at 08:30 Helsinki time, a job on Cloud Run:**
-1. loads yesterday's prices and ECB exchange rates;
+1. loads yesterday's prices (Nasdaq Nordic, free) and ECB exchange rates;
 2. settles yesterday's simulated trades and scores predictions that have matured;
 3. collects news up to the 09:15 cut-off and extracts events (Claude Haiku);
 4. computes signals and picks 10 names to predict;
@@ -20,13 +20,15 @@ The question it answers: are Claude's market-adjusted 5-day predictions better t
 7. applies the rules (code sets stops, sizes and the cost hurdle) and simulates the orders;
 8. writes the daily report.
 
-**A web interface on Cloud Run,** visible only to you:
+**A news poller** (Supabase Cron and an Edge Function) collects feed items every 5 minutes.
+
+**A web interface on Firebase Hosting,** reading Supabase directly, visible only to you:
 - performance against the benchmark;
 - the prediction scorecard;
 - today's report;
 - settings, locked during the scored month.
 
-**Postgres on Neon** holds everything: prices, news, packets, trades, predictions and versioned settings.
+**Postgres on Supabase (free plan)** holds everything: prices, news, packets, trades, predictions and versioned settings. Where each part runs: `docs/architecture.md` (decision D9, amendment A12).
 
 ## 3. Milestones and dates
 
@@ -35,10 +37,10 @@ Dates assume keys and network access are in place by Monday 28 September. Each m
 | | Milestone | Deliverables | Dates (working days) |
 |---|---|---|---|
 | M0 | Verification | `docs/verification.md`, decisions log | **done** |
-| M1 | Data foundation | Repo and tooling; full database schema with migrations; versioned settings in the database; EODHD and ECB loaders; one year of price backfill; exchange calendars; universe and liquidity filter; **news collection starts** | Mon 28 Sep – Fri 2 Oct (5) |
+| M1 | Data foundation | Repo and tooling; full database schema with migrations; versioned settings in the database; Nasdaq Nordic and ECB loaders; one year of price backfill; dividend and split source; exchange calendars; universe and liquidity filter; **news collection starts** | Mon 28 Sep – Fri 2 Oct (5) |
 | M4 | Simulator and costs | Nordnet cost model (Taso 4, FX 0.25 %, slippage); fill rules; golden and fill tests | Mon 5 – Tue 6 Oct (2) |
 | M2 | Ethical screen | Your rules in settings; industry first pass; Claude reads segment reports with quoted sources; overrides; **review list for you** | Wed 7 – Fri 9 Oct (3); your review by Wed 14 Oct |
-| M3 | News pipeline | Nasdaq feeds (main and First North), Oslo and press headlines; dedupe; company linking; event extraction; novelty check; admissibility rule | Mon 12 – Thu 15 Oct (4) |
+| M3 | News pipeline | Nasdaq feeds (main and First North) and press headlines; dedupe; company linking; event extraction; novelty check; admissibility rule | Mon 12 – Thu 15 Oct (4) |
 | M5 | Decision layer | Signals; shortlist; frozen packet; Sonnet call with schema and number checks; rules engine; leakage and provenance tests | Fri 16 – Wed 21 Oct (4) |
 | M6a | Reports and scorecard | Daily report; scoring with the four baselines and overlap-robust errors; deployment on Cloud Run and Scheduler; spend alert | Thu 22 – Fri 23 Oct (2) |
 | M7 | Shakedown | One unscored week of real runs; fix problems; **freeze settings** on Fri 30 Oct | Mon 26 – Fri 30 Oct |
@@ -67,28 +69,24 @@ The build window from 28 September to 23 October is **20 working days** (COMPUTE
 
 | # | Item | Needed by |
 |---|---|---|
-| 1 | Network access for the data hosts, in the environment settings | M1 start |
-| 2 | Keys: EODHD, Neon, Anthropic API, GCP project | M1 start |
-| 3 | Nordnet Taso 4 fees for Sweden, Denmark and Norway (logged-in price list) | M4 |
-| 4 | EODHD fundamentals plan for one month (€59.99), for sector data | M1 |
-| 5 | Oslo Newsweb: private use only, so titles and links in reports | M3 |
-| 6 | LLM spend alert at $5 per day | M6a |
-| 7 | Screen rules, including natural-gas consumers, and review of borderline cases | M2 |
-| 8 | Optional: a design from Claude Design for the web interface | M6b |
+| 1 | GCP project with billing and a €1 budget alert (Supabase and Anthropic are done) | M6a |
+| 2 | Nordnet Taso 4 fees for Sweden and Denmark (logged-in price list) | M4 |
+| 3 | LLM spend alert at $5 per day | M6a |
+| 4 | Screen rules, including natural-gas consumers, and review of borderline cases | M2 |
+| 5 | Optional: a design from Claude Design for the web interface | M6b |
 
 ## 6. Running costs (per month)
 
 | Item | Cost | Basis |
 |---|---|---|
-| EODHD EOD All World | €19.99 | SOURCED, eodhd.com/pricing |
-| EODHD Fundamentals, first month only | +€40.00 over EOD | SOURCED price €59.99, minus €19.99 |
+| Price data (Nasdaq Nordic website API) | €0 | D10, A13; fallback EODHD €19.99 only if it breaks |
 | Claude API | ≈ $30 | COMPUTED from ASSUMED volumes (verification V20) |
-| Cloud Run, Scheduler, Neon | expected near zero at this scale | UNVERIFIED; measured during the shakedown |
+| Supabase Free | €0 | SOURCED, supabase.com/pricing; 500 MB database limit |
+| Cloud Run job, Scheduler, Secret Manager, Firebase Hosting | expected €0, inside free allowances | COMPUTED from ASSUMED run times (A12); budget alert at €1 |
 
 ## 7. Main risks
 
-1. **Very little trading.** At Taso 4, the hurdle is 4.2 % for Helsinki and 5.7 % for other currencies (COMPUTED). The portfolio may rarely trade. That is acceptable, because the verdict rests on predictions, not on P&L.
+1. **Very little trading.** At Taso 4, the hurdle is 4.2 % for Helsinki and 5.7 % for SEK and DKK names (COMPUTED). The portfolio may rarely trade. That is acceptable, because the verdict rests on predictions, not on P&L.
 2. **Schedule.** 20 working days and no slack. The fallback is December or January.
-3. **Data gaps.** EODHD coverage of First North and sector data are not yet confirmed; the first API tests will settle both.
-4. **Oslo news** may be thin without an official feed. Oslo names then trade on signals alone.
-5. **Nasdaq auction migration** (INET) on 28 September and 5 October. Opening times will be rechecked before the shakedown.
+3. **Unofficial price source.** The Nasdaq API has no published terms or uptime promise. The loader is swappable; EODHD is the paid fallback. Prices are unadjusted, so a dividend and split source is needed in M1.
+4. **Nasdaq auction migration** (INET) on 28 September and 5 October. Opening times will be rechecked before the shakedown.
