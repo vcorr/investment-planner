@@ -12,6 +12,7 @@ This file carries a planning conversation held in a Claude Code web session on 2
 2. `docs/PLAN.md` — the full plan: how it works, milestones with dates, verdict rules, costs, risks, open items.
 3. `docs/verification.md` — verification findings (V1–V22), each with its source and status.
 4. `BRIEF.md` — the original build brief, verbatim. Background and detail; read it through the amendments.
+5. `docs/tasks/` — self-contained task files for cloud agents. If you were started on one, follow it.
 
 ## Working agreement (from the brief, §0)
 
