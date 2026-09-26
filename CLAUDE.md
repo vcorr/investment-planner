@@ -57,7 +57,7 @@ Preferences stated for this work:
 - `verification_log` loaded (V1–V22).
 - 268–269 daily bars per share from 2025-09-01, and ECB SEK/DKK rates, backfilled in about 12 s. Parsers reject wrong instruments, out-of-range dates, duplicate dates, non-positive prices and open/close outside [low, high]; the real data passes.
 - Reviewed by a second agent before the first commit; its must-fix items are fixed.
-- News poller written, not yet deployed (branch `claude/news-poller`): table `news_items` (migration `0003`), parser and paging rule in `supabase/functions/_shared/nasdaq-news.ts`, Edge Function `supabase/functions/news-poller`, schedule `supabase/sql/schedule-news-poller.sql` (Vault secrets `news_poller_url` and `news_poller_key`). Each run pages back while every in-scope item is new, up to 5 pages, and reports a gap if it never meets stored items.
+- **News poller live since 2026-09-26 16:30 UTC.** Table `news_items` (migration `0003`), parser and paging rule in `supabase/functions/_shared/nasdaq-news.ts`, Edge Function `supabase/functions/news-poller` (deploy: `supabase functions deploy news-poller --project-ref mzuapexiltbhuebgyowe --use-api`), Supabase Cron every 5 minutes calling it with the default secret key from Vault (`news_poller_url`, `news_poller_key`; set up by `pnpm job:schedule-news-poller`). Each run pages back while every in-scope item is new, up to 5 pages, and reports a gap if it never meets stored items. First run stored 893 items (16-25 Sep). Check runs in `cron.job_run_details` and `net._http_response`. Pass JSON to Postgres as `${JSON.stringify(x)}::text::jsonb`; a bare `::jsonb` or `sql.json` breaks in postgres.js.
 
 **Commands:** `pnpm db:generate`, `pnpm db:migrate`, `pnpm job:seed-sample`, `pnpm job:load-verification`, `pnpm job:backfill`, `pnpm test`, `pnpm typecheck`.
 
@@ -67,8 +67,7 @@ Preferences stated for this work:
 1. Daily incremental load, with a check that the latest bar is the expected last trading day.
 2. Exchange holiday calendars.
 3. Free dividend and split source. Also check whether Nasdaq's history is adjusted: find a known ex-dividend or split date and record the result as a V-row.
-4. News poller: apply migration `0003`, deploy the function (needs `supabase login` by Vasco), store the two Vault secrets, run the schedule SQL. Poll no faster than every 30 s.
-5. Resolve: what time yesterday's bar is complete in the Nasdaq API; whether RSS items carry ISINs.
+4. Resolve: what time yesterday's bar is complete in the Nasdaq API. Announcements carry no ISIN (V23), so M3 links them to shares by company name.
 
 **Deferred review items (not yet done):** verify Supabase's TLS certificate instead of `ssl: "require"`; for the scored month, insert new price dates only or log changed values (point-in-time audit); update `segment`, `market` and `isin` in the listings upsert when the full-universe loader arrives; `load-verification` never deletes rows removed from the markdown; the RLS-policy test promised in A12.
 
@@ -83,8 +82,7 @@ Preferences stated for this work:
 | 5 | Report delivery channel (web interface, possibly plus a Cowork summary) | M6 |
 | 6 | Optional: a Claude Design mock-up for the web interface | M6b |
 | 7 | Confirm that approving PLAN.md approves M1–M6 | now |
-| 8 | `supabase login`, so the news poller can be deployed | M1 |
-| 9 | `chmod 600 .env` (it is currently readable by other users on the Mac) | now |
+| 8 | `chmod 600 .env` (it is currently readable by other users on the Mac) | now |
 
 ## Useful facts
 

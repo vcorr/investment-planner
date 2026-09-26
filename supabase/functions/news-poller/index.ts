@@ -35,12 +35,15 @@ async function fetchPage(start: number): Promise<unknown> {
   return body;
 }
 
-/** IDs from `ids` that are already in the table. JSON parameters avoid driver-specific array handling. */
+/**
+ * IDs from `ids` that are already in the table. JSON is sent as a text parameter and cast in SQL: a bare
+ * `${json}::jsonb` lets the driver encode the string a second time, so it arrives as a jsonb string, not an array.
+ */
 async function storedIds(sql: Sql, ids: number[]): Promise<Set<number>> {
   if (ids.length === 0) return new Set();
   const rows = await sql<{ id: string }[]>`
     select disclosure_id::text as id from news_items
-    where disclosure_id in (select jsonb_array_elements_text(${JSON.stringify(ids)}::jsonb)::bigint)`;
+    where disclosure_id in (select jsonb_array_elements_text(${JSON.stringify(ids)}::text::jsonb)::bigint)`;
   return new Set(rows.map((r) => Number(r.id)));
 }
 
@@ -67,7 +70,7 @@ async function insertRows(sql: Sql, rows: NewsRow[]): Promise<number> {
                             message_url, released_at, published_at, raw_hash, source)
     select disclosure_id, company, market, category, category_id, headline, language, languages,
            message_url, released_at, published_at, raw_hash, source
-    from jsonb_to_recordset(${JSON.stringify(payload)}::jsonb) as x(
+    from jsonb_to_recordset(${JSON.stringify(payload)}::text::jsonb) as x(
       disclosure_id bigint, company text, market text, category text, category_id integer, headline text,
       language text, languages text[], message_url text, released_at timestamptz, published_at timestamptz,
       raw_hash char(64), source text)
