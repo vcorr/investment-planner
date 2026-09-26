@@ -1,5 +1,5 @@
 // News poller: fetches Nasdaq Nordic company announcements and stores the in-scope ones in `news_items`.
-// Called hourly by Supabase Cron (supabase/sql/schedule-news-poller.sql). Never poll more often
+// Called every 4 hours by Supabase Cron (supabase/sql/schedule-news-poller.sql). Never poll more often
 // than every 30 seconds (V12). Deployed with verify_jwt = false; the caller must send the default secret
 // key in the `apikey` header, which withSupabase checks.
 

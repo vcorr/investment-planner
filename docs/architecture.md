@@ -24,7 +24,7 @@ flowchart TB
 
     subgraph supabase[Supabase, free plan]
         direction TB
-        cron[Supabase Cron<br/>hourly]
+        cron[Supabase Cron<br/>every 4 hours]
         poller[Edge Function<br/>news poller]
         db[(Postgres<br/>prices, news, packets, predictions,<br/>trades, settings versions, scorecard)]
         api[Data API<br/>access rules: Vasco only]
