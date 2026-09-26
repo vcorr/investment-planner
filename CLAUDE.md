@@ -72,6 +72,12 @@ Preferences stated for this work:
 
 **Deferred review items (not yet done):** verify Supabase's TLS certificate instead of `ssl: "require"`; for the scored month, insert new price dates only or log changed values (point-in-time audit); update `segment`, `market` and `isin` in the listings upsert when the full-universe loader arrives; `load-verification` never deletes rows removed from the markdown; the RLS-policy test promised in A12.
 
+## M4 progress (2026-09-26)
+
+**Done:** cost model in `src/costs/` (Taso 4 by default, FX 0.25 %, slippage bands, 3× hurdle) and fill simulator in `src/sim/fills.ts` (open fills, stops before targets, entry-day stops, whole shares, holiday queue). Pure functions; tests in `test/costs.test.ts` and `test/fills.test.ts`. Open: Stockholm and Copenhagen fees (V2, tagged `UNVERIFIED_FEE`); `CostConfig` moves into the versioned settings later (A11).
+
+**Verification:** follow `.claude/skills/verify/SKILL.md` before every commit (measurable checks, including a mutation spot-check for cost and fill logic).
+
 ## Waiting on Vasco
 
 | # | Item | Needed for |
