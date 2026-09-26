@@ -12,7 +12,8 @@ Decisions only Vasco can make (brief §21), and amendments to the brief agreed b
 | D4 | Timeline | Start as soon as possible. The scored month is the first full calendar month after a completed shakedown week, announced in advance |
 | D5 | Ethical screen | **Vasco sets the exclusion rules.** The screen is driven by a user-edited rules file, not by rules hard-coded in the repo (see A7) |
 | D6 | Natural-gas consumers (§21.2) | Covered by D5: Vasco sets it in the rules file |
-| D7 | Report delivery (§21.4) | Open; needed before M6 |
+| D7 | Report delivery (§21.4) | Open; needed before M6. Leaning: web interface (D8), possibly with a Cowork scheduled task for a morning summary |
+| D8 | Web interface (§22) | **Build in M6.** A second Cloud Run service reading the same database, with pages for performance, predictions, today's report and settings. Google sign-in restricted to Vasco. Plain design unless Vasco supplies one from Claude Design |
 
 ## Amendments accepted
 
@@ -43,3 +44,5 @@ The Stop and Extend rules in §16 are otherwise unchanged.
 **A9 — FX fee.** 0.25 % per automatic conversion, now SOURCED from Nordnet (`docs/verification.md` V3).
 
 **A10 — Model IDs.** `decisionModel: "claude-sonnet-5"`, `extractionModel: "claude-haiku-4-5-20251001"` (dated snapshot, pinned for reproducibility). Sonnet 5 has no temperature control; `effort` is logged instead.
+
+**A11 — Settings in the database, edited from the web interface.** Because the interface (D8) must change preferences, not only show them, settings and screen rules live in the database as versioned, hashed snapshots. Each save creates a new version; the daily job records which version it used. The settings form is read-only during the scored month, and the only way to change anything then is to end the month deliberately. The YAML files in A7 become the initial seed and an export format, not the live source.
