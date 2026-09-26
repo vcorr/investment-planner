@@ -57,6 +57,7 @@ Preferences stated for this work:
 - `verification_log` loaded (V1–V22).
 - 268–269 daily bars per share from 2025-09-01, and ECB SEK/DKK rates, backfilled in about 12 s. Parsers reject wrong instruments, out-of-range dates, duplicate dates, non-positive prices and open/close outside [low, high]; the real data passes.
 - Reviewed by a second agent before the first commit; its must-fix items are fixed.
+- News poller written, not yet deployed (branch `claude/news-poller`): table `news_items` (migration `0003`), parser and paging rule in `supabase/functions/_shared/nasdaq-news.ts`, Edge Function `supabase/functions/news-poller`, schedule `supabase/sql/schedule-news-poller.sql` (Vault secrets `news_poller_url` and `news_poller_key`). Each run pages back while every in-scope item is new, up to 5 pages, and reports a gap if it never meets stored items.
 
 **Commands:** `pnpm db:generate`, `pnpm db:migrate`, `pnpm job:seed-sample`, `pnpm job:load-verification`, `pnpm job:backfill`, `pnpm test`, `pnpm typecheck`.
 
@@ -66,7 +67,7 @@ Preferences stated for this work:
 1. Daily incremental load, with a check that the latest bar is the expected last trading day.
 2. Exchange holiday calendars.
 3. Free dividend and split source. Also check whether Nasdaq's history is adjusted: find a known ex-dividend or split date and record the result as a V-row.
-4. News poller (Supabase Cron + Edge Function; needs `supabase login` by Vasco). Poll no faster than every 30 s.
+4. News poller: apply migration `0003`, deploy the function (needs `supabase login` by Vasco), store the two Vault secrets, run the schedule SQL. Poll no faster than every 30 s.
 5. Resolve: what time yesterday's bar is complete in the Nasdaq API; whether RSS items carry ISINs.
 
 **Deferred review items (not yet done):** verify Supabase's TLS certificate instead of `ssl: "require"`; for the scored month, insert new price dates only or log changed values (point-in-time audit); update `segment`, `market` and `isin` in the listings upsert when the full-universe loader arrives; `load-verification` never deletes rows removed from the markdown; the RLS-policy test promised in A12.

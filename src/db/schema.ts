@@ -2,6 +2,7 @@ import {
   bigint,
   char,
   date,
+  index,
   integer,
   jsonb,
   numeric,
@@ -91,6 +92,34 @@ export const settingsVersions = pgTable("settings_versions", {
   note: text("note"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 }).enableRLS();
+
+/**
+ * Nasdaq Nordic company announcements for HEL, STO and CPH, Main Market and First North (decision D11).
+ * Written by the news-poller Edge Function; rows are never updated, so `fetched_at` is when we first saw the item.
+ */
+export const newsItems = pgTable(
+  "news_items",
+  {
+    disclosureId: bigint("disclosure_id", { mode: "number" }).primaryKey(),
+    company: text("company"),
+    market: text("market").notNull(),
+    /** Nasdaq's `cnsCategory`, e.g. "Inside information". */
+    category: text("category"),
+    categoryId: integer("category_id"),
+    headline: text("headline").notNull(),
+    language: text("language"),
+    languages: text("languages").array(),
+    messageUrl: text("message_url"),
+    releasedAt: timestamp("released_at", { withTimezone: true }).notNull(),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+    /** Our own clock. The leakage rule admits only items with `fetched_at` before the decision cutoff. */
+    fetchedAt: timestamp("fetched_at", { withTimezone: true }).notNull().defaultNow(),
+    /** SHA-256 of the raw item's canonical JSON. */
+    rawHash: char("raw_hash", { length: 64 }).notNull(),
+    source: text("source").notNull(),
+  },
+  (t) => [index("news_items_released_at_idx").on(t.releasedAt)],
+).enableRLS();
 
 /** Findings from docs/verification.md, one row per V-item. */
 export const verificationLog = pgTable("verification_log", {
