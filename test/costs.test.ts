@@ -42,21 +42,23 @@ describe("golden cost tests (brief §19, verification V1)", () => {
     expect(roundCents(minimumBindingNotionalEur("taso4", DEFAULT_COST_CONFIG))).toBe(4_500);
   });
 
-  it("1,500 € Helsinki at Taso 4 with 10 bps slippage: round trip 1.40 %, hurdle 4.20 % (A8)", () => {
+  it("1,500 € Helsinki at Taso 4 with 10 bps slippage: round trip 1.40 %, hurdle 2.80 % at 2× (A8, D13)", () => {
     const cost = roundTripCost(1_500, "EUR", LIQUID, DEFAULT_COST_CONFIG);
     expect(cost).toMatchObject({ feesEur: 18, fxFeesEur: 0 });
     expect(cost.slippageEur).toBeCloseTo(3, 10);
     expect(cost.pct).toBeCloseTo(1.4, 10);
-    expect(hurdlePct(1_500, "EUR", LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(4.2, 10);
+    expect(hurdlePct(1_500, "EUR", LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(2.8, 10);
+    expect(hurdlePct(1_500, "EUR", LIQUID, { ...DEFAULT_COST_CONFIG, hurdleMultiplier: 3 })).toBeCloseTo(4.2, 10);
   });
 
-  it.each(["SEK", "DKK"] as const)("1,500 € %s name at Taso 4 (0.25 %, min 10 €), 10 bps, FX 0.25 % per side: 2.03 %, hurdle 6.10 % (V2)", (currency) => {
+  it.each(["SEK", "DKK"] as const)("1,500 € %s name at Taso 4 (0.25 %, min 10 €), 10 bps, FX 0.25 % per side: 2.03 %, hurdle 4.07 % at 2× (V2, D13)", (currency) => {
     // Fees 2 × 10 € + FX 2 × 3.75 € + slippage 2 × 1.50 € = 30.50 € on 1,500 €.
     const cost = roundTripCost(1_500, currency, LIQUID, DEFAULT_COST_CONFIG);
     expect(cost).toMatchObject({ feesEur: 20, fxFeesEur: 7.5 });
     expect(cost.totalEur).toBeCloseTo(30.5, 10);
     expect(cost.pct).toBeCloseTo(2.0333, 4);
-    expect(hurdlePct(1_500, currency, LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(6.1, 10);
+    expect(hurdlePct(1_500, currency, LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo((2 * 30.5 * 100) / 1_500, 10);
+    expect(hurdlePct(1_500, currency, LIQUID, { ...DEFAULT_COST_CONFIG, hurdleMultiplier: 3 })).toBeCloseTo(6.1, 10);
   });
 
   it("the Nordic Taso 4 minimum stops binding at 4,000.00 € (10 € / 0.25 %)", () => {

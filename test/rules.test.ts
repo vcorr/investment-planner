@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { costConfigSchema, DEFAULT_COST_CONFIG as COSTS, type CostConfig } from "../src/costs/config.js";
+import { costConfigSchema, DEFAULT_COST_CONFIG, type CostConfig } from "../src/costs/config.js";
+
+// The scenarios below were built as edge cases at the brief's 3× hurdle. The engine's logic does not depend on
+// the multiplier, so they pin 3× explicitly; the default is 2× (D13), tested in "the default 2× hurdle".
+const COSTS: CostConfig = costConfigSchema.parse({ ...DEFAULT_COST_CONFIG, hurdleMultiplier: 3 });
 import { roundCents } from "../src/costs/costs.js";
 import { DEFAULT_RULES_CONFIG as RULES, rulesConfigSchema, sizingRulesFrom, type RulesConfig } from "../src/rules/config.js";
 import {
@@ -457,6 +461,15 @@ describe("step 3: BUY checks, each at, just under and just over its limit", () =
     expect(hurdle.figures.atNotionalEur).toBeCloseTo(1_401.4, 9);
     expect(hurdle.figures.hurdlePct).toBeCloseTo((3 * (18 + 0.002 * 1_401.4) * 100) / 1_401.4, 9);
     expect(d).toMatchObject({ accepted: false, reasons: ["HURDLE"] });
+  });
+
+  it("the default 2× hurdle (D13) accepts the same BUY that 3× rejects", () => {
+    // Same case as above. At 1,401.40 €: 2 × (18 + 2.8028) ÷ 1,401.40 = 2.9689 % < E = 4.2933 %.
+    expect(DEFAULT_COST_CONFIG.hurdleMultiplier).toBe(2);
+    const r = run(input({ shortlist: [name(Y, { previousClose: 700, volatility20d: 0.03 })], predictions: [up(Y, 0.82)] }), RULES, DEFAULT_COST_CONFIG);
+    const d = decisionFor(r, Y, "BUY");
+    expect(check(d, "HURDLE").figures.hurdlePct).toBeCloseTo((2 * (18 + 0.002 * 1_401.4) * 100) / 1_401.4, 9);
+    expect(d.accepted).toBe(true);
   });
 
   it.each([
