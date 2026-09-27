@@ -1,38 +1,26 @@
 import { createHash } from "node:crypto";
-import { z } from "zod";
+import { canonicalJson, type Settings } from "../../supabase/functions/_shared/settings.js";
 
 // Settings live in the database as versioned, hashed snapshots (amendment A11).
-// M1 holds only the universe; later milestones add sections.
+// The schema is defined once in supabase/functions/_shared/settings.ts, so the Edge Function,
+// the web page and Node use the same definition; this module re-exports it for Node.
 
-const listingRefSchema = z.object({
-  market: z.enum(["HEL", "STO", "CPH"]),
-  symbol: z.string().min(1),
-  orderbookId: z.string().min(1),
-});
+export {
+  canonicalJson,
+  DEFAULT_SCREEN,
+  isValidIsin,
+  settingsLocked,
+  settingsSchema,
+  type ListingRef,
+  type Screen,
+  type ScreenOverride,
+  type ScreenRule,
+  type ScreenTest,
+  type ScoredMonth,
+  type Settings,
+} from "../../supabase/functions/_shared/settings.js";
 
-export const settingsSchema = z.object({
-  universe: z.object({
-    /** "sample": a fixed list for development. "full" arrives with the screen (M2). */
-    mode: z.literal("sample"),
-    listings: z.array(listingRefSchema).min(1),
-  }),
-});
-
-export type Settings = z.infer<typeof settingsSchema>;
-export type ListingRef = z.infer<typeof listingRefSchema>;
-
-/** JSON with object keys sorted at every level, so equal settings always hash equally. */
-export function canonicalJson(value: unknown): string {
-  if (Array.isArray(value)) return `[${value.map(canonicalJson).join(",")}]`;
-  if (value !== null && typeof value === "object") {
-    const entries = Object.entries(value as Record<string, unknown>)
-      .filter(([, v]) => v !== undefined)
-      .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
-    return `{${entries.map(([k, v]) => `${JSON.stringify(k)}:${canonicalJson(v)}`).join(",")}}`;
-  }
-  return JSON.stringify(value);
-}
-
+/** SHA-256 of the canonical JSON, hex. Same result as the shared, asynchronous `settingsHash` (tested). */
 export function hashSettings(settings: Settings): string {
   return createHash("sha256").update(canonicalJson(settings)).digest("hex");
 }
