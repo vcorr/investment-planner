@@ -7,6 +7,7 @@ import {
   NEWEY_WEST_LAGS,
   neweyWestVarianceOfMean,
   Z_95,
+  critical95,
 } from "../src/scoring/inference.js";
 import { baselineStats, breakdown, CALIBRATION_BUCKETS, filterScored, hitStats, majorityDirections } from "../src/scoring/metrics.js";
 import {
@@ -520,8 +521,10 @@ describe("hit rate clustered by decision day", () => {
     expect(e.days).toBe(3);
     expect(e.variance).toBeCloseTo(0.1 / 36, 15);
     expect(e.se).toBeCloseTo(Math.sqrt(0.1 / 36), 15);
-    expect(e.ci95.lower).toBeCloseTo(0.5 - Z_95 * Math.sqrt(0.1 / 36), 15);
-    expect(e.ci95.upper).toBeCloseTo(0.5 + Z_95 * Math.sqrt(0.1 / 36), 15);
+    // Three days, so t with 2 degrees of freedom: 4.302653 (standard table value).
+    expect(e.critical).toBeCloseTo(4.302653, 5);
+    expect(e.ci95.lower).toBeCloseTo(0.5 - e.critical * Math.sqrt(0.1 / 36), 15);
+    expect(e.ci95.upper).toBeCloseTo(0.5 + e.critical * Math.sqrt(0.1 / 36), 15);
     // Independent variance 0.25 / 6; effective n = 6 × (0.25/6) ÷ (0.1/36) = 90. It exceeds n here because
     // the day sums are negatively correlated at lag 1.
     expect(e.effectiveN).toBeCloseTo(90, 10);
@@ -546,6 +549,18 @@ describe("hit rate clustered by decision day", () => {
 
   it("the Z value is the 97.5 % normal quantile", () => {
     expect(Z_95).toBeCloseTo(1.96, 2);
+  });
+
+  it("the critical value is Student's t with days − 1 degrees of freedom", () => {
+    // Standard two-sided 95 % table values.
+    expect(critical95(2)).toBeCloseTo(12.706205, 5);
+    expect(critical95(6)).toBeCloseTo(2.570582, 5);
+    expect(critical95(11)).toBeCloseTo(2.228139, 5);
+    expect(critical95(21)).toBeCloseTo(2.085963, 5);
+    expect(critical95(31)).toBeCloseTo(2.042272, 5);
+    expect(critical95(101)).toBeCloseTo(1.983972, 5);
+    expect(critical95(1)).toBe(Number.POSITIVE_INFINITY);
+    expect(() => critical95(0)).toThrow();
   });
 });
 
@@ -628,9 +643,11 @@ describe("verdict thresholds (A2, A5, PLAN §4)", () => {
     expect(decideVerdict(withFive({ lower: 0.5000001 })).verdict).toBe("PASS");
   });
 
-  it("stops below 55 %, at any number of calls; 55 % itself extends", () => {
+  it("stops below 55 % with at least 100 calls; fewer calls or 55 % itself extends", () => {
     expect(decideVerdict(withFive({ hitRate: 0.5499, lower: 0.45 })).verdict).toBe("STOP");
-    expect(decideVerdict(withFive({ hitRate: 0.5499, calls: 40, lower: 0.4 })).verdict).toBe("STOP");
+    expect(decideVerdict(withFive({ hitRate: 0.5499, calls: 100, lower: 0.4 })).verdict).toBe("STOP");
+    expect(decideVerdict(withFive({ hitRate: 0.5499, calls: 99, lower: 0.4 })).verdict).toBe("EXTEND");
+    expect(decideVerdict(withFive({ hitRate: 0.3, calls: 40, lower: 0.1 })).verdict).toBe("EXTEND");
     expect(decideVerdict(withFive({ hitRate: 0.55, lower: 0.47 })).verdict).toBe("EXTEND");
     expect(decideVerdict(withFive({ hitRate: 0.55, lower: 0.47 })).stop.passed).toBe(false);
   });

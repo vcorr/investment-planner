@@ -1,5 +1,6 @@
 import { baselineScores, canonical, type BaselineKind } from "./metrics.js";
 import type { Scored } from "./outcome.js";
+import { studentTQuantile } from "./student-t.js";
 
 // Overlap-robust inference (amendment A2; brief §13 correlation caveat). Pure.
 //
@@ -12,8 +13,18 @@ import type { Scored } from "./outcome.js";
 /** A2: lags for the Newey–West estimator (5-day windows overlap on up to 4 later days). */
 export const NEWEY_WEST_LAGS = 4;
 
-/** 97.5 % quantile of the standard normal, for two-sided 95 % intervals (COMPUTED, Φ⁻¹(0.975)). */
+/** 97.5 % quantile of the standard normal (COMPUTED, Φ⁻¹(0.975)). Kept for reference; intervals use `critical95`. */
 export const Z_95 = 1.959963984540054;
+
+/**
+ * Two-sided 95 % critical value for a mean estimated over `days` decision days: Student's t with days − 1
+ * degrees of freedom (Vasco's choice, 2026-09-27). With about 21 days this is 2.086 rather than 1.96, so the
+ * interval is about 6 % wider. Infinite with fewer than 2 days: one day says nothing about spread.
+ */
+export function critical95(days: number): number {
+  if (!Number.isInteger(days) || days < 1) throw new Error(`Days must be a positive integer, got ${days}`);
+  return days < 2 ? Number.POSITIVE_INFINITY : studentTQuantile(0.975, days - 1);
+}
 
 /** Bartlett weight for lag l of L. */
 function bartlett(lag: number, lags: number): number {
@@ -58,6 +69,8 @@ export interface Estimate {
   mean: number;
   variance: number;
   se: number;
+  /** Critical value used for the interval: t with days − 1 degrees of freedom. */
+  critical: number;
   ci95: { lower: number; upper: number };
   /**
    * The number of independent observations that would give the same variance:
@@ -107,7 +120,8 @@ export function clusteredMean(observations: readonly Observation[], lags: number
     mean,
     variance,
     se,
-    ci95: { lower: mean - Z_95 * se, upper: mean + Z_95 * se },
+    critical: critical95(days.length),
+    ci95: { lower: mean - critical95(days.length) * se, upper: mean + critical95(days.length) * se },
     effectiveN: variance === 0 ? null : (n * naiveVariance) / variance,
   };
 }

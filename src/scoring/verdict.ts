@@ -20,6 +20,11 @@ export const VERDICT_RULES = {
   portfolioSeMultiple: 2,
   /** Stop: 5-day hit rate strictly below this (§16). */
   stopHitRate: 0.55,
+  /**
+   * Stop applies only with at least this many matured, decided 5-day calls (Vasco's choice, 2026-09-27), so an
+   * outage or a short run cannot trigger it on a handful of calls. Below it, a low hit rate extends.
+   */
+  stopMinCalls: 100,
 } as const;
 
 const finite = z.number().refine(Number.isFinite, "must be finite");
@@ -89,7 +94,11 @@ export function decideVerdict(raw: VerdictInput): Verdict {
       values: { excessReturn: portfolio.excessReturn, se: portfolio.se, floor: -r.portfolioSeMultiple * portfolio.se },
     },
   ];
-  const stop: Condition = { rule: `5-day hit rate < ${r.stopHitRate}`, passed: fiveDay.hitRate < r.stopHitRate, values: { hitRate: fiveDay.hitRate } };
+  const stop: Condition = {
+    rule: `5-day hit rate < ${r.stopHitRate}, with at least ${r.stopMinCalls} matured 5-day calls`,
+    passed: fiveDay.hitRate < r.stopHitRate && fiveDay.calls >= r.stopMinCalls,
+    values: { hitRate: fiveDay.hitRate, calls: fiveDay.calls },
+  };
 
   const verdict = pass.every((c) => c.passed) ? "PASS" : stop.passed ? "STOP" : "EXTEND";
   return { verdict, pass, stop };
