@@ -70,10 +70,9 @@ The build window from 28 September to 23 October is **20 working days** (COMPUTE
 | # | Item | Needed by |
 |---|---|---|
 | 1 | GCP project with billing and a €1 budget alert (Supabase and Anthropic are done) | M6a |
-| 2 | Nordnet Taso 4 fees for Sweden and Denmark (logged-in price list) | M4 |
-| 3 | LLM spend alert at $5 per day | M6a |
-| 4 | Screen rules, including natural-gas consumers, and review of borderline cases | M2 |
-| 5 | Optional: a design from Claude Design for the web interface | M6b |
+| 2 | LLM spend alert at $5 per day | M6a |
+| 3 | Screen rules, including natural-gas consumers, and review of borderline cases | M2 |
+| 4 | Optional: a design from Claude Design for the web interface | M6b |
 
 ## 6. Running costs (per month)
 
@@ -86,7 +85,7 @@ The build window from 28 September to 23 October is **20 working days** (COMPUTE
 
 ## 7. Main risks
 
-1. **Very little trading.** At Taso 4, the hurdle is 4.2 % for Helsinki and 5.7 % for SEK and DKK names (COMPUTED). The portfolio may rarely trade. That is acceptable, because the verdict rests on predictions, not on P&L.
+1. **Very little trading.** At Taso 4, the hurdle is 4.2 % for Helsinki and 6.1 % for SEK and DKK names (COMPUTED, V2). The portfolio may rarely trade. That is acceptable, because the verdict rests on predictions, not on P&L.
 2. **Schedule.** 20 working days and no slack. The fallback is December or January.
 3. **Unofficial price source.** The Nasdaq API has no published terms or uptime promise. The loader is swappable; EODHD is the paid fallback. Prices are unadjusted, so a dividend and split source is needed in M1.
 4. **Nasdaq auction migration** (INET) on 28 September and 5 October. Opening times will be rechecked before the shakedown.

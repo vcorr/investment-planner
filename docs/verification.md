@@ -13,7 +13,7 @@ These rows will be loaded into the `verification_log` table in M1.
 | # | Item | Finding | Status |
 |---|---|---|---|
 | V1 | Nordnet Helsinki fees, Taso 4 | 0.20 %, minimum 9 € per executed order | SOURCED |
-| V2 | Nordnet fees for Stockholm, Copenhagen, Oslo | Not shown on any public page reachable; price list says tier fees are for "kotimaan markkinoilla" (domestic markets) | OPEN — Vasco to read from logged-in price list |
+| V2 | Nordnet fees for Stockholm, Copenhagen, Oslo | One schedule for Sweden, Norway and Denmark: Taso 4 0.25 %, Taso 3 0.18 %, Taso 2 0.12 %, Taso 1 0.08 %, minimum 10 € at every tier (stated in euros). Resolved 2026-09-27 | SOURCED |
 | V3 | Nordnet FX conversion fee | 0.25 % on automatic conversion; 0.075 % if converted manually via a currency account | SOURCED |
 | V4 | EODHD exchange codes | HE, ST, CO, OL | SOURCED |
 | V5 | EODHD OHLC semantics | open/high/low/close raw as traded; `adjusted_close` adjusted for splits and dividends; volume split-adjusted | SOURCED |
@@ -59,15 +59,22 @@ COMPUTED consequences at Taso 4 (fee per side = max(0.20 % × notional, 9 €)):
 | 5,000 € | 20.00 € | 0.40 % |
 | Minimum stops binding at | 4,500.00 € | — |
 
-With the ASSUMED 10 bps slippage per side, a 1,500 € Helsinki round trip costs 1.40 %, so the 3× hurdle is **4.20 %**. For a SEK, NOK or DKK name, adding the 0.25 % FX fee on each side, the cost is 1.90 % and the hurdle **5.70 %** (COMPUTED; the non-Helsinki brokerage rate is still V2).
+With the ASSUMED 10 bps slippage per side, a 1,500 € Helsinki round trip costs 1.40 %, so the 3× hurdle is **4.20 %**. For a SEK or DKK name the Nordic schedule applies (V2): the cost is 2.03 % and the hurdle **6.10 %** (COMPUTED).
 
 The golden tests in §19 of the brief stay as written (they test the formula at Taso 3 and Taso 1). Taso 4 golden values above will be added.
 
-### V2 — Nordnet fees on Stockholm, Copenhagen, Oslo (OPEN)
+### V2 — Nordnet fees on Stockholm, Copenhagen, Oslo (SOURCED, 2026-09-27)
 
-The public price list's tier fees are stated for "kotimaan markkinoilla" (domestic markets). The detailed brokerage table is behind an interactive element that the scraper could not open. Secondary sources give conflicting figures. Until resolved, the brief's rule stands: use the Helsinki schedule and tag such trades `UNVERIFIED_FEE`.
+Source: https://www.nordnet.fi/palvelut/hinnasto, accessed 2026-09-27. The brokerage table is embedded in the page's data rather than rendered, so it was read from the page source. Row "Ruotsi, Norja ja Tanska" (Sweden, Norway and Denmark):
 
-**Action for Vasco (two minutes):** log in to Nordnet → Hinnasto → Välityspalkkiot, and read the Taso 4 rate and minimum for Ruotsi, Tanska and Norja.
+| | Taso 4 | Taso 3 | Taso 2 | Taso 1 |
+|---|---|---|---|---|
+| Rate | 0,25 % | 0,18 % | 0,12 % | 0,08 % |
+| "Minimipalkkio, Ruotsi, Norja ja Tanska" | Min. 10 € | Min. 10 € | Min. 10 € | Min. 10 € |
+
+The same table confirms Helsinki ("Suomi": 0,20 % / Min. 9 € at Taso 4). The minimum is stated in euros, so the fee is taken to be charged in euros and not to pay the FX fee itself (inference from the stated currency; the FAQ adds that fees are charged the day after the trade from the account's cash balance, https://www.nordnet.fi/faq/kaupankaynti-ja-arvopaperit/valityspalkkiot/miten-valityspalkkio-lasketaan).
+
+COMPUTED consequences at Taso 4, 1,500 € SEK or DKK name, 10 bps ASSUMED slippage per side, FX 0.25 % per side: fees 20 € + FX 7.50 € + slippage 3 € = 30.50 €, a round trip of **2.03 %** and a 3× hurdle of **6.10 %** (was 1.90 % and 5.70 % on the Helsinki schedule). The Nordic minimum stops binding at 4,000 €.
 
 ### V3 — Nordnet FX conversion fee (SOURCED)
 
