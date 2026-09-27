@@ -76,7 +76,11 @@ Preferences stated for this work:
 
 **Done:** cost model in `src/costs/` (Taso 4 by default, FX 0.25 %, slippage bands, 3× hurdle) and fill simulator in `src/sim/fills.ts` (open fills, stops before targets, entry-day stops, whole shares, holiday queue). Pure functions; tests in `test/costs.test.ts` and `test/fills.test.ts`. Open: Stockholm and Copenhagen fees (V2, tagged `UNVERIFIED_FEE`); `CostConfig` moves into the versioned settings later (A11).
 
-**Verification:** follow `.claude/skills/verify/SKILL.md` before every commit (measurable checks, including a mutation spot-check for cost and fill logic).
+**Review changes (2026-09-27, Vasco):** entry orders carry `stopPct` and `targetPct`, and the stop and target are fixed from the entry day's actual open, so a gap down at the open can no longer buy and stop out at once. Each fill's cash change is rounded to 0.01 €.
+
+**M5 requirements from the M4 review:** test the cost hurdle on the estimated whole-share size (from the previous close), not the intended 1,500 €. Whether Nordnet charges Swedish and Danish fees in SEK or DKK (so the fee itself pays FX) is open with V2.
+
+**Checks:** `.claude/skills/verify/SKILL.md` (added by the M4 agent) lists measurable checks, including a mutation spot-check for cost and fill logic. Use it for cost, fill and scoring changes; it is not required for every commit.
 
 ## Waiting on Vasco
 

@@ -27,11 +27,12 @@ const bar = (tradeDate: string, open: number | null, high: number | null, low: n
 });
 const day = (b: Bar | null, date = b?.tradeDate ?? "2026-09-26", eurRate = 1): MarketDay => ({ date, openDates: OPEN_DATES, bar: b, eurRate });
 
+// With an open of 100, these give a stop at 90 and a target at 120, matching `position()` below.
 const entry = (change: Partial<EntryOrder> = {}): EntryOrder => ({
   currency: "EUR",
   sizeEur: 1_500,
-  stopPrice: 90,
-  targetPrice: 120,
+  stopPct: 0.1,
+  targetPct: 0.2,
   medianTurnoverEur: LIQUID,
   ...change,
 });
@@ -62,24 +63,25 @@ describe("entries at the open", () => {
   }).at(-1);
 
   it("buys whole shares at open × (1 + s) and books every cost", () => {
-    const result = filledEntry(simulateEntry(entry({ stopPrice: 8.5, targetPrice: 10 }), day(nokia!), 5_000, COSTS, RULES));
+    const result = filledEntry(simulateEntry(entry(), day(nokia!), 5_000, COSTS, RULES));
     expect(result.entry).toMatchObject({ side: "BUY", reason: "ENTRY", shares: 162, rawPrice: 9.25, feeEur: 9, fxFeeEur: 0 });
     expect(result.entry.fillPrice).toBeCloseTo(9.25925, 10);
     expect(result.entry.grossEur).toBeCloseTo(1_499.9985, 8);
     expect(result.entry.slippageEur).toBeCloseTo(1.4985, 8);
-    expect(result.entry.cashChangeEur).toBeCloseTo(-1_508.9985, 8);
+    expect(result.entry.cashChangeEur).toBe(-1_509);
     expect(result.entry.provenance).toEqual({ fee: "SOURCED", fxFee: null, slippage: "ASSUMED" });
     expect(result.sameDayExit).toBeNull();
   });
 
   it("converts a SEK entry at the day's ECB rate and adds the FX fee, tagging the fee UNVERIFIED_FEE", () => {
     const result = filledEntry(
-      simulateEntry(entry({ currency: "SEK", medianTurnoverEur: MID, stopPrice: 130, targetPrice: 170 }), day(bar("2026-09-25", 150, 152, 149), undefined, 11), 5_000, COSTS, RULES),
+      simulateEntry(entry({ currency: "SEK", medianTurnoverEur: MID }), day(bar("2026-09-25", 150, 152, 149), undefined, 11), 5_000, COSTS, RULES),
     );
     expect(result.entry).toMatchObject({ currency: "SEK", shares: 109, eurRate: 11, feeEur: 9, fxFeeEur: 3.73 });
     expect(result.entry.fillPrice).toBeCloseTo(150.375, 10);
     expect(result.entry.grossEur).toBeCloseTo((109 * 150.375) / 11, 8);
-    expect(result.entry.cashChangeEur).toBeCloseTo(-((109 * 150.375) / 11 + 9 + 3.73), 8);
+    // (109 × 150.375) / 11 + 9 + 3.73 = 1,502.8095… €, booked as 1,502.81 €.
+    expect(result.entry.cashChangeEur).toBe(-1_502.81);
     expect(result.entry.provenance).toEqual({ fee: "UNVERIFIED_FEE", fxFee: "SOURCED", slippage: "ASSUMED" });
   });
 
@@ -102,7 +104,7 @@ describe("adverse slippage", () => {
     if (result.status !== "FILLED") throw new Error("expected a fill");
     expect(result.exit).toMatchObject({ side: "SELL", reason: "EXIT", rawPrice: 100 });
     expect(result.exit.fillPrice).toBeCloseTo(99.9, 10);
-    expect(result.exit.cashChangeEur).toBeCloseTo(15 * 99.9 - 9, 8);
+    expect(result.exit.cashChangeEur).toBe(1_489.5);
   });
 
   it("makes stop and target sells cheaper", () => {
@@ -141,6 +143,14 @@ describe("stops and targets", () => {
     const result = filledEntry(simulateEntry(entry(), day(bar("2026-09-25", 100, 101, 88)), 5_000, COSTS, RULES));
     expect(result.entry.shares).toBe(14);
     expect(result.sameDayExit).toMatchObject({ side: "SELL", reason: "STOP", shares: 14, rawPrice: 90 });
+  });
+
+  it("sets the stop and target from the actual open, so a gap down at the open is not stopped out at once", () => {
+    // The share closed at 100 the day before but opens at 80: the stop is 72, not 90, and the entry stands.
+    const result = filledEntry(simulateEntry(entry(), day(bar("2026-09-25", 80, 82, 78)), 5_000, COSTS, RULES));
+    expect(result.position.stopPrice).toBeCloseTo(72, 10);
+    expect(result.position.targetPrice).toBeCloseTo(96, 10);
+    expect(result.sameDayExit).toBeNull();
   });
 
   it("checks the target on the entry day too", () => {
@@ -193,10 +203,21 @@ describe("closed exchanges and missing data", () => {
 
   it("throws on inconsistent inputs rather than guessing", () => {
     const b = day(bar("2026-09-25", 100, 101, 99));
-    expect(() => simulateEntry(entry({ stopPrice: 130 }), b, 5_000, COSTS, RULES)).toThrow(/below target/);
+    expect(() => simulateEntry(entry({ stopPct: 0 }), b, 5_000, COSTS, RULES)).toThrow(/between 0 and 1/);
+    expect(() => simulateEntry(entry({ stopPct: 1 }), b, 5_000, COSTS, RULES)).toThrow(/between 0 and 1/);
+    expect(() => simulateEntry(entry({ targetPct: 0 }), b, 5_000, COSTS, RULES)).toThrow(/Target fraction/);
     expect(() => simulateExit(position({ shares: 1.5 }), b, COSTS)).toThrow(/whole number/);
     expect(() => simulateExit(position(), { ...b, eurRate: 11 }, COSTS)).toThrow(/EUR rate must be 1/);
     expect(() => simulateExit(position({ currency: "SEK" }), { ...b, eurRate: 0 }, COSTS)).toThrow(/SEK rate/);
+  });
+});
+
+describe("cash in whole cents", () => {
+  it("rounds every fill's cash change to 0.01 €", () => {
+    const b = day(bar("2026-09-25", 100.123, 101, 99));
+    const { entry: e } = filledEntry(simulateEntry(entry(), b, 5_000, COSTS, RULES));
+    expect(Math.round(e.cashChangeEur * 100) / 100).toBe(e.cashChangeEur);
+    expect(Math.abs(e.cashChangeEur + e.grossEur + e.feeEur + e.fxFeeEur)).toBeLessThanOrEqual(0.005);
   });
 });
 
@@ -210,12 +231,12 @@ describe("whole shares and sizing rules", () => {
 
   it("rejects an entry that rounding drops below 1,250 €, rather than trading smaller", () => {
     // 1,500 / 760.76 = 1.97, so one share for 760.76 €.
-    const result = simulateEntry(entry({ stopPrice: 700, targetPrice: 900 }), day(bar("2026-09-25", 760, 770, 750)), 5_000, COSTS, RULES);
+    const result = simulateEntry(entry(), day(bar("2026-09-25", 760, 770, 750)), 5_000, COSTS, RULES);
     expect(result).toMatchObject({ status: "REJECTED", reason: "BELOW_MIN_POSITION" });
   });
 
   it("rejects an entry when a single share costs more than the position size", () => {
-    const result = simulateEntry(entry({ stopPrice: 1_400, targetPrice: 1_800 }), day(bar("2026-09-25", 1_600, 1_610, 1_590)), 5_000, COSTS, RULES);
+    const result = simulateEntry(entry(), day(bar("2026-09-25", 1_600, 1_610, 1_590)), 5_000, COSTS, RULES);
     expect(result).toMatchObject({ status: "REJECTED", reason: "ZERO_SHARES" });
   });
 

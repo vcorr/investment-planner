@@ -52,7 +52,7 @@ export interface Fill {
   slippageEur: number;
   feeEur: number;
   fxFeeEur: number;
-  /** Negative for a buy (gross plus costs), positive for a sale (gross less costs). */
+  /** Negative for a buy (gross plus costs), positive for a sale (gross less costs). Rounded to 0.01 €, as in a real account. */
   cashChangeEur: number;
   provenance: { fee: CostProvenance; fxFee: CostProvenance | null; slippage: "ASSUMED" };
 }
@@ -76,6 +76,8 @@ export interface Rejected {
 export interface EntryFilled {
   status: "FILLED";
   entry: Fill;
+  /** The position opened, with its stop and target fixed from the actual open. */
+  position: Position;
   /** A stop or target hit later on the entry day (A6), or null. */
   sameDayExit: Fill | null;
 }
@@ -94,8 +96,13 @@ export interface EntryOrder {
   currency: Currency;
   /** Position size to aim for, in EUR, before whole-share rounding. */
   sizeEur: number;
-  stopPrice: number;
-  targetPrice: number;
+  /**
+   * Stop and target as fractions of the entry day's official open (0.10 = 10 %), set by code (A1).
+   * Fixing them from the actual open, not from an earlier close, keeps the stop below the entry price,
+   * so a share that gaps down at the open is never bought and stopped out at the same price.
+   */
+  stopPct: number;
+  targetPct: number;
   medianTurnoverEur: number;
 }
 
@@ -181,7 +188,7 @@ function makeFill(
     slippageEur,
     feeEur: fee.amountEur,
     fxFeeEur: fx.amountEur,
-    cashChangeEur: side === "BUY" ? -(grossEur + costsEur) : grossEur - costsEur,
+    cashChangeEur: roundCents(side === "BUY" ? -(grossEur + costsEur) : grossEur - costsEur),
     provenance: { fee: fee.provenance, fxFee: currency === "EUR" ? null : fx.provenance, slippage: "ASSUMED" },
   };
 }
@@ -215,7 +222,8 @@ export function simulateEntry(
   rules: SizingRules,
 ): EntryFilled | Queued | Rejected {
   assertPositive("Position size", order.sizeEur);
-  assertLevels(order.stopPrice, order.targetPrice);
+  if (!(order.stopPct > 0 && order.stopPct < 1)) throw new Error(`Stop must be a fraction between 0 and 1, got ${order.stopPct}`);
+  assertPositive("Target fraction", order.targetPct);
   assertRate(order.currency, day.eurRate);
   if (!Number.isFinite(cashEur)) throw new Error(`Cash must be a number, got ${cashEur}`);
   const bar = tradingBar(day);
@@ -236,8 +244,14 @@ export function simulateEntry(
   if (cashAfter < rules.cashFloorEur) {
     return reject("CASH_FLOOR", `cash after entry would be ${cashAfter.toFixed(2)} €, below ${rules.cashFloorEur} €`);
   }
-  const position: Position = { ...order, shares };
-  return { status: "FILLED", entry, sameDayExit: stopOrTarget(position, bar, day, config) };
+  const position: Position = {
+    currency: order.currency,
+    shares,
+    stopPrice: open * (1 - order.stopPct),
+    targetPrice: open * (1 + order.targetPct),
+    medianTurnoverEur: order.medianTurnoverEur,
+  };
+  return { status: "FILLED", entry, position, sameDayExit: stopOrTarget(position, bar, day, config) };
 }
 
 /** Checks a held position's stop and target against the day's bar. */
