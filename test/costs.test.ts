@@ -50,16 +50,23 @@ describe("golden cost tests (brief §19, verification V1)", () => {
     expect(hurdlePct(1_500, "EUR", LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(4.2, 10);
   });
 
-  it.each(["SEK", "DKK"] as const)("1,500 € %s name at Taso 4, 10 bps, FX 0.25 % per side: 1.90 %, hurdle 5.70 % (A8)", (currency) => {
+  it.each(["SEK", "DKK"] as const)("1,500 € %s name at Taso 4 (0.25 %, min 10 €), 10 bps, FX 0.25 % per side: 2.03 %, hurdle 6.10 % (V2)", (currency) => {
+    // Fees 2 × 10 € + FX 2 × 3.75 € + slippage 2 × 1.50 € = 30.50 € on 1,500 €.
     const cost = roundTripCost(1_500, currency, LIQUID, DEFAULT_COST_CONFIG);
-    expect(cost).toMatchObject({ feesEur: 18, fxFeesEur: 7.5 });
-    expect(cost.pct).toBeCloseTo(1.9, 10);
-    expect(hurdlePct(1_500, currency, LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(5.7, 10);
+    expect(cost).toMatchObject({ feesEur: 20, fxFeesEur: 7.5 });
+    expect(cost.totalEur).toBeCloseTo(30.5, 10);
+    expect(cost.pct).toBeCloseTo(2.0333, 4);
+    expect(hurdlePct(1_500, currency, LIQUID, DEFAULT_COST_CONFIG)).toBeCloseTo(6.1, 10);
   });
 
-  it("reproduces the brief's Taso 3 illustration in §11 (about 1.13 % and 1.63 %)", () => {
+  it("the Nordic Taso 4 minimum stops binding at 4,000.00 € (10 € / 0.25 %)", () => {
+    expect(roundCents(minimumBindingNotionalEur("taso4", DEFAULT_COST_CONFIG, "nordic"))).toBe(4_000);
+  });
+
+  it("reproduces the brief's Taso 3 Helsinki illustration in §11 (about 1.13 %)", () => {
+    // The brief's 1.63 % for SEK names assumed Helsinki fees; the sourced Nordic schedule (V2) gives 2.03 %.
     expect(roundTripCostPct(1_500, "EUR", LIQUID, atTier("taso3"))).toBeCloseTo(1.13, 2);
-    expect(roundTripCostPct(1_500, "SEK", LIQUID, atTier("taso3"))).toBeCloseTo(1.63, 2);
+    expect(roundTripCostPct(1_500, "SEK", LIQUID, atTier("taso3"))).toBeCloseTo(2.03, 2);
   });
 });
 
@@ -72,10 +79,11 @@ describe("orderFee", () => {
     expect(orderFee(4_567.891, "EUR", DEFAULT_COST_CONFIG).amountEur).toBe(9.14);
   });
 
-  it("tags Helsinki fees SOURCED and Stockholm and Copenhagen fees UNVERIFIED_FEE (V2)", () => {
-    expect(orderFee(1_500, "EUR", DEFAULT_COST_CONFIG).provenance).toBe("SOURCED");
-    expect(orderFee(1_500, "SEK", DEFAULT_COST_CONFIG).provenance).toBe("UNVERIFIED_FEE");
-    expect(orderFee(1_500, "DKK", DEFAULT_COST_CONFIG).provenance).toBe("UNVERIFIED_FEE");
+  it("uses the Nordic schedule for SEK and DKK names: 0.25 %, minimum 10 € (V2)", () => {
+    expect(orderFee(1_500, "SEK", DEFAULT_COST_CONFIG)).toEqual({ amountEur: 10, provenance: "SOURCED" });
+    expect(orderFee(1_500, "DKK", DEFAULT_COST_CONFIG).amountEur).toBe(10);
+    expect(orderFee(10_000, "SEK", DEFAULT_COST_CONFIG).amountEur).toBe(25);
+    expect(orderFee(1_500, "EUR", DEFAULT_COST_CONFIG)).toEqual({ amountEur: 9, provenance: "SOURCED" });
   });
 
   it.each([0, -1, Number.NaN, Number.POSITIVE_INFINITY])("rejects a notional of %d", (notional) => {

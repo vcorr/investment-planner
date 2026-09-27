@@ -1,5 +1,7 @@
 # Task: M4 — cost model and fill simulator
 
+> **Done (PR #1).** Kept as the record of what was asked. Superseded in part on 2026-09-27: V2 is sourced, so SEK and DKK names use the Nordic schedule (0.25 %, minimum 10 €) and `UNVERIFIED_FEE` no longer exists; entry orders take `stopPct` and `targetPct`.
+
 Self-contained task for a cloud agent. Everything needed is in this repository. No keys, no database and no network access are required.
 
 ## Before you start

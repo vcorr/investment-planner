@@ -74,11 +74,11 @@ Preferences stated for this work:
 
 ## M4 progress (2026-09-26)
 
-**Done:** cost model in `src/costs/` (Taso 4 by default, FX 0.25 %, slippage bands, 3× hurdle) and fill simulator in `src/sim/fills.ts` (open fills, stops before targets, entry-day stops, whole shares, holiday queue). Pure functions; tests in `test/costs.test.ts` and `test/fills.test.ts`. Open: Stockholm and Copenhagen fees (V2, tagged `UNVERIFIED_FEE`); `CostConfig` moves into the versioned settings later (A11).
+**Done:** cost model in `src/costs/` (Taso 4 by default, FX 0.25 %, slippage bands, 3× hurdle) and fill simulator in `src/sim/fills.ts` (open fills, stops before targets, entry-day stops, whole shares, holiday queue). Pure functions; tests in `test/costs.test.ts` and `test/fills.test.ts`. `CostConfig` moves into the versioned settings later (A11).
 
 **Review changes (2026-09-27, Vasco):** entry orders carry `stopPct` and `targetPct`, and the stop and target are fixed from the entry day's actual open, so a gap down at the open can no longer buy and stop out at once. Each fill's cash change is rounded to 0.01 €.
 
-**M5 requirements from the M4 review:** test the cost hurdle on the estimated whole-share size (from the previous close), not the intended 1,500 €. Whether Nordnet charges Swedish and Danish fees in SEK or DKK (so the fee itself pays FX) is open with V2.
+**M5 requirements from the M4 review:** test the cost hurdle on the estimated whole-share size (from the previous close), not the intended 1,500 €. Swedish and Danish fees are sourced (V2): 0.25 %, minimum 10 € at Taso 4, stated in euros, so the fee pays no FX.
 
 **Checks:** `.claude/skills/verify/SKILL.md` (added by the M4 agent) lists measurable checks, including a mutation spot-check for cost and fill logic. Use it for cost, fill and scoring changes; it is not required for every commit.
 
@@ -87,7 +87,7 @@ Preferences stated for this work:
 | # | Item | Needed for |
 |---|---|---|
 | 1 | GCP project with billing and a €1 budget alert (Supabase and Anthropic keys are in `.env`) | M6a |
-| 2 | Nordnet Taso 4 fees for Sweden and Denmark (logged-in price list, Välityspalkkiot) | M4 |
+| 2 | ~~Nordnet fees for Sweden and Denmark~~ sourced 2026-09-27 (V2) | — |
 | 3 | Confirm the LLM spend alert at $5 per day (estimate ≈ $1.44 per day) | M6a |
 | 4 | Screen rules, including natural-gas consumers; later, the borderline review | M2 |
 | 5 | Report delivery channel (web interface, possibly plus a Cowork summary) | M6 |
@@ -98,6 +98,6 @@ Preferences stated for this work:
 ## Useful facts
 
 - Build window 28 Sep – 23 Oct 2026 is 20 working days, with no slack (COMPUTED).
-- Taso 4 hurdle: 4.20 % for Helsinki, 5.70 % for SEK and DKK names, at 1,500 € with ASSUMED 10 bps slippage per side (COMPUTED).
+- Taso 4 hurdle: 4.20 % for Helsinki, 6.10 % for SEK and DKK names (Nordic schedule 0.25 %, min 10 €, V2), at 1,500 € with ASSUMED 10 bps slippage per side (COMPUTED).
 - November 2026 has 21 decision days and no exchange closures (SOURCED, Nasdaq calendars).
 - Nasdaq's Nordic auction migration (INET): Helsinki 28 Sep, Copenhagen and Stockholm 5 Oct 2026. Recheck opening times before the shakedown.

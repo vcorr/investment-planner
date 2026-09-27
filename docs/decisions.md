@@ -43,7 +43,7 @@ The Stop and Extend rules in §16 are otherwise unchanged.
 
 **A7 — User-owned screen rules.** `screen/rules.yaml` (committed) is where Vasco defines excluded activities, the test for each (e.g. revenue-share threshold, any-involvement, or a role such as "extracts or sells"), and borderline handling. `screen/overrides.yaml` keeps per-company verdicts and always wins. The code ships the brief's five excluded categories as the starting content of `rules.yaml`, clearly marked as Vasco's to edit. Changing either file during the scored month voids the month, as for any config change.
 
-**A8 — Taso 4 cost figures.** The hurdle illustration in §11 becomes: a 1,500 € Helsinki round trip costs 1.40 % including ASSUMED slippage, so the hurdle is 4.20 %; for SEK, NOK or DKK names, 1.90 % and 5.70 % (COMPUTED, `docs/verification.md` V1). The golden tests in §19 are kept and Taso 4 cases are added.
+**A8 — Taso 4 cost figures.** The hurdle illustration in §11 becomes: a 1,500 € Helsinki round trip costs 1.40 % including ASSUMED slippage, so the hurdle is 4.20 %; for SEK, NOK or DKK names, 1.90 % and 5.70 % (COMPUTED, `docs/verification.md` V1). The golden tests in §19 are kept and Taso 4 cases are added. **Updated 2026-09-27 (V2 sourced):** SEK and DKK names use Nordnet's Sweden, Norway and Denmark schedule (Taso 4: 0.25 %, minimum 10 €), so a 1,500 € round trip costs 2.03 % and the hurdle is 6.10 %.
 
 **A9 — FX fee.** 0.25 % per automatic conversion, now SOURCED from Nordnet (`docs/verification.md` V3).
 

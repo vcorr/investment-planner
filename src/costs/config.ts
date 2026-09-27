@@ -5,7 +5,7 @@ import { z } from "zod";
 
 export type Currency = "EUR" | "SEK" | "DKK";
 /** Provenance of a cost component, as reported beside every simulated fill. */
-export type CostProvenance = "SOURCED" | "ASSUMED" | "UNVERIFIED_FEE";
+export type CostProvenance = "SOURCED" | "ASSUMED";
 
 export const TIERS = ["taso1", "taso2", "taso3", "taso4"] as const;
 export type Tier = (typeof TIERS)[number];
@@ -15,6 +15,11 @@ const tierFeeSchema = z.object({
   minimumEur: z.number().nonnegative(),
 });
 
+const tierScheduleSchema = z.object({ taso1: tierFeeSchema, taso2: tierFeeSchema, taso3: tierFeeSchema, taso4: tierFeeSchema });
+
+/** "helsinki" for EUR names on Nasdaq Helsinki; "nordic" for SEK and DKK names (Nordnet's "Ruotsi, Norja ja Tanska" row). */
+export type FeeSchedule = "helsinki" | "nordic";
+
 const slippageBandSchema = z.object({
   /** The band applies when the 60-day median daily turnover is at least this much. */
   minTurnoverEur: z.number().positive(),
@@ -22,7 +27,7 @@ const slippageBandSchema = z.object({
 });
 
 export const costConfigSchema = z.object({
-  tiers: z.object({ taso1: tierFeeSchema, taso2: tierFeeSchema, taso3: tierFeeSchema, taso4: tierFeeSchema }),
+  schedules: z.object({ helsinki: tierScheduleSchema, nordic: tierScheduleSchema }),
   tier: z.enum(TIERS),
   fxFeeBps: z.number().nonnegative(),
   /** Highest threshold first. Turnover below the last band is outside the universe and throws. */
@@ -40,13 +45,21 @@ export type CostConfig = z.infer<typeof costConfigSchema>;
 export type TierFee = z.infer<typeof tierFeeSchema>;
 
 export const DEFAULT_COST_CONFIG: CostConfig = costConfigSchema.parse({
-  // SOURCED: https://www.nordnet.fi/palvelut/hinnasto, accessed 2026-09-26 (verification V1). Helsinki schedule;
-  // Stockholm and Copenhagen use it too until V2 is resolved, tagged UNVERIFIED_FEE.
-  tiers: {
-    taso1: { rateBps: 6, minimumEur: 3 },
-    taso2: { rateBps: 10, minimumEur: 5 },
-    taso3: { rateBps: 15, minimumEur: 7 },
-    taso4: { rateBps: 20, minimumEur: 9 },
+  // SOURCED: https://www.nordnet.fi/palvelut/hinnasto. Helsinki accessed 2026-09-26 (V1); Sweden, Norway and
+  // Denmark accessed 2026-09-27 (V2), where the minimum is stated in euros for every tier.
+  schedules: {
+    helsinki: {
+      taso1: { rateBps: 6, minimumEur: 3 },
+      taso2: { rateBps: 10, minimumEur: 5 },
+      taso3: { rateBps: 15, minimumEur: 7 },
+      taso4: { rateBps: 20, minimumEur: 9 },
+    },
+    nordic: {
+      taso1: { rateBps: 8, minimumEur: 10 },
+      taso2: { rateBps: 12, minimumEur: 10 },
+      taso3: { rateBps: 18, minimumEur: 10 },
+      taso4: { rateBps: 25, minimumEur: 10 },
+    },
   },
   tier: "taso4", // D1: fixed for the whole simulation.
   // SOURCED: https://www.nordnet.fi/koulu/valuutanvaihto, accessed 2026-09-26 (V3, A9). Automatic conversion.
@@ -59,7 +72,7 @@ export const DEFAULT_COST_CONFIG: CostConfig = costConfigSchema.parse({
   hurdleMultiplier: 3, // Brief §11.
 });
 
-/** Fees on the Helsinki schedule are sourced; Stockholm and Copenhagen reuse it unverified (V2). */
-export function feeProvenance(currency: Currency): CostProvenance {
-  return currency === "EUR" ? "SOURCED" : "UNVERIFIED_FEE";
+/** The fee schedule that applies to a share, by its trading currency. */
+export function feeSchedule(currency: Currency): FeeSchedule {
+  return currency === "EUR" ? "helsinki" : "nordic";
 }

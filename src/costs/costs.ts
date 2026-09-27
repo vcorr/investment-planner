@@ -1,4 +1,4 @@
-import { feeProvenance, type CostConfig, type CostProvenance, type Currency, type Tier } from "./config.js";
+import { feeSchedule, type CostConfig, type CostProvenance, type Currency, type FeeSchedule, type Tier } from "./config.js";
 
 // Pure cost functions (brief §12). Amounts are in EUR unless a name says otherwise.
 
@@ -22,13 +22,17 @@ function assertNotional(notionalEur: number): void {
   if (!Number.isFinite(notionalEur) || notionalEur <= 0) throw new Error(`Notional must be a positive number of euros, got ${notionalEur}`);
 }
 
-/** Brokerage fee for one executed order: max(rate × notional, minimum), at the configured tier. */
+/**
+ * Brokerage fee for one executed order: max(rate × notional, minimum), at the configured tier, on the schedule
+ * for the share's market. Nordnet states the Swedish and Danish minimum in euros, so the fee is taken to be
+ * charged in euros and pays no FX fee itself (V2).
+ */
 export function orderFee(notionalEur: number, currency: Currency, config: CostConfig): CostAmount {
   assertNotional(notionalEur);
-  const { rateBps, minimumEur } = config.tiers[config.tier];
+  const { rateBps, minimumEur } = config.schedules[feeSchedule(currency)][config.tier];
   return {
     amountEur: roundCents(Math.max((rateBps / BPS) * notionalEur, minimumEur)),
-    provenance: feeProvenance(currency),
+    provenance: "SOURCED",
   };
 }
 
@@ -53,8 +57,8 @@ export function slippageBps(medianTurnoverEur: number, config: CostConfig): numb
 }
 
 /** Notional at which the percentage fee equals the minimum; below it the minimum binds. */
-export function minimumBindingNotionalEur(tier: Tier, config: CostConfig): number {
-  const { rateBps, minimumEur } = config.tiers[tier];
+export function minimumBindingNotionalEur(tier: Tier, config: CostConfig, schedule: FeeSchedule = "helsinki"): number {
+  const { rateBps, minimumEur } = config.schedules[schedule][tier];
   return minimumEur / (rateBps / BPS);
 }
 

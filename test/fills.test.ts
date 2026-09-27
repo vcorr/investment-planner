@@ -73,21 +73,21 @@ describe("entries at the open", () => {
     expect(result.sameDayExit).toBeNull();
   });
 
-  it("converts a SEK entry at the day's ECB rate and adds the FX fee, tagging the fee UNVERIFIED_FEE", () => {
+  it("converts a SEK entry at the day's ECB rate and adds the FX fee, on the Nordic fee schedule", () => {
     const result = filledEntry(
       simulateEntry(entry({ currency: "SEK", medianTurnoverEur: MID }), day(bar("2026-09-25", 150, 152, 149), undefined, 11), 5_000, COSTS, RULES),
     );
-    expect(result.entry).toMatchObject({ currency: "SEK", shares: 109, eurRate: 11, feeEur: 9, fxFeeEur: 3.73 });
+    expect(result.entry).toMatchObject({ currency: "SEK", shares: 109, eurRate: 11, feeEur: 10, fxFeeEur: 3.73 });
     expect(result.entry.fillPrice).toBeCloseTo(150.375, 10);
     expect(result.entry.grossEur).toBeCloseTo((109 * 150.375) / 11, 8);
-    // (109 × 150.375) / 11 + 9 + 3.73 = 1,502.8095… €, booked as 1,502.81 €.
-    expect(result.entry.cashChangeEur).toBe(-1_502.81);
-    expect(result.entry.provenance).toEqual({ fee: "UNVERIFIED_FEE", fxFee: "SOURCED", slippage: "ASSUMED" });
+    // (109 × 150.375) / 11 + 10 + 3.73 = 1,503.8095… €, booked as 1,503.81 €.
+    expect(result.entry.cashChangeEur).toBe(-1_503.81);
+    expect(result.entry.provenance).toEqual({ fee: "SOURCED", fxFee: "SOURCED", slippage: "ASSUMED" });
   });
 
-  it("tags DKK fees UNVERIFIED_FEE too", () => {
+  it("charges DKK names the Nordic minimum of 10 €", () => {
     const result = filledEntry(simulateEntry(entry({ currency: "DKK" }), day(bar("2026-09-25", 100, 101, 99), undefined, 7.46), 5_000, COSTS, RULES));
-    expect(result.entry.provenance.fee).toBe("UNVERIFIED_FEE");
+    expect(result.entry.feeEur).toBe(10);
   });
 });
 
