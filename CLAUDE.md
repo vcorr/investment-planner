@@ -66,7 +66,7 @@ Preferences stated for this work:
 
 **Still to do in M1:**
 1. Daily incremental load, with a check that the latest bar is the expected last trading day.
-2. Exchange holiday calendars.
+2. Exchange holiday calendars: handed to a cloud agent, `docs/tasks/m1-exchange-calendars.md` (2026-09-27).
 3. Free dividend and split source. Also check whether Nasdaq's history is adjusted: find a known ex-dividend or split date and record the result as a V-row.
 4. Resolve: what time yesterday's bar is complete in the Nasdaq API. Announcements carry no ISIN (V23), so M3 links them to shares by company name.
 
