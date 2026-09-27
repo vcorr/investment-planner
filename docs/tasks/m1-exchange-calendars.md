@@ -1,6 +1,6 @@
 # Task: M1 — exchange holiday calendars
 
-Self-contained task for a cloud agent. No keys and no database are needed. You need web access to read the exchanges' published holiday pages.
+Self-contained task for a cloud agent. **Read `docs/tasks/README.md` first**: its rules on shared files, fixtures and hand-back apply. No keys and no database are needed. You need web access to read the exchanges' published holiday pages.
 
 ## Why
 
@@ -55,21 +55,21 @@ Your sourced calendar must agree with this fixture exactly for that range, and a
    - `expectedLatestBar(market, date)`: the last trading day strictly before `date`. The 08:30 daily job uses it to check that yesterday's bar arrived.
    - Every function **throws** for a date outside the covered range, and for a malformed date or an unknown market.
 4. **Table and loader**
-   - A table `exchange_calendars` in `src/db/schema.ts`: primary key (market, date), plus `kind`, `closes_at`, `note`, `source` and `loaded_at`, with `.enableRLS()`. Generate its migration with `pnpm db:generate --name exchange_calendars`.
+   - A table `exchange_calendars` in `src/db/tables/calendars.ts`: primary key (market, date), plus `kind`, `closes_at`, `note`, `source` and `loaded_at`, with `.enableRLS()`. Do not generate a migration; see `docs/tasks/README.md`.
    - A job `src/jobs/load-calendars.ts` that upserts the data file into the table, with a `job:load-calendars` script in `package.json`.
-   - You cannot run the job or the migration: there is no database in your environment. The main session will run them.
+   - You cannot run the job: there is no database in your environment. The main session will run it.
 5. **Tests** in `test/calendar.test.ts`:
    - The fixture cross-check. For each market and every weekday from 2025-09-01 to 2026-09-25: `isTradingDay` is true exactly when the fixture has the date.
    - November 2026: 21 trading days for each market, and no closures.
    - Weekends, early closes, previous and next trading day across a holiday run (e.g. Christmas 2026), and `expectedLatestBar` on a Monday and after a holiday.
    - Errors: an out-of-range date, a malformed date, an unknown market.
-6. **Docs.** Add row V25 to `docs/verification.md` with the sources and what they confirm. Then update the "M1 progress" section of `CLAUDE.md` in two or three lines: calendars done, and anything left open.
+6. **Docs.** Propose a V-row in the PR description with the sources and what they confirm. Do not edit `docs/verification.md` or `CLAUDE.md`.
 
 ## Checks
 
 - `pnpm install`, `pnpm typecheck` and `pnpm test` must pass. All existing tests must still pass.
 - Follow sections 1 and 2 of `.claude/skills/verify/SKILL.md`.
-- Do not modify files outside those named above, apart from `package.json` (the script) and the generated migration files.
+- Do not modify files outside those named above, apart from `package.json` (the script).
 - Ignore the untracked files under `docs/` that belong to another project.
 
 ## Finish

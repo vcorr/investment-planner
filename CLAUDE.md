@@ -12,7 +12,7 @@ This file carries a planning conversation held in a Claude Code web session on 2
 2. `docs/PLAN.md` — the full plan: how it works, milestones with dates, verdict rules, costs, risks, open items.
 3. `docs/verification.md` — verification findings (V1–V22), each with its source and status.
 4. `BRIEF.md` — the original build brief, verbatim. Background and detail; read it through the amendments.
-5. `docs/tasks/` — self-contained task files for cloud agents. If you were started on one, follow it.
+5. `docs/tasks/` — self-contained task files for cloud agents, with shared rules in `docs/tasks/README.md`. If you were started on one, follow it. Task agents must not edit this file, `docs/verification.md`, `docs/decisions.md`, `docs/PLAN.md` or `migrations/`; the main session merges their PRs, generates migrations and updates these files.
 
 ## Working agreement (from the brief, §0)
 
@@ -37,7 +37,7 @@ Preferences stated for this work:
 **Decisions already made** (details in `docs/decisions.md`):
 - Nordnet tier **Taso 4** (0.20 %, minimum 9 €), fixed for the whole simulation.
 - **First North included.** **Oslo dropped** (D10): the free price source covers Nasdaq Helsinki, Stockholm and Copenhagen only.
-- Start the scored month **as soon as possible**. Target November 2026; fallback December or January.
+- **No fixed start date** (2026-09-27): the scored month follows a completed shakedown week and is announced in advance.
 - **Vasco sets the ethical screen rules**, including natural-gas consumers.
 - All amendments A1–A13 accepted. Headlines: code computes stops, sizes and the cost hurdle; overlap-robust inference; majority-direction baseline; FX fee 0.25 % (SOURCED); settings versioned in the database; Supabase plus Google hosting (A12); Nasdaq Nordic website API for prices and sectors, no paid data (A13).
 - **Web interface: build it in M6b**, after the shakedown starts. Pages: performance, predictions, today's report, settings. Google sign-in, Vasco only. Settings are editable from the page and lock during the scored month.
@@ -66,7 +66,7 @@ Preferences stated for this work:
 
 **Still to do in M1:**
 1. Daily incremental load, with a check that the latest bar is the expected last trading day.
-2. Exchange holiday calendars: handed to a cloud agent, `docs/tasks/m1-exchange-calendars.md` (2026-09-27).
+2. Exchange holiday calendars: cloud task.
 3. Free dividend and split source. Also check whether Nasdaq's history is adjusted: find a known ex-dividend or split date and record the result as a V-row.
 4. Resolve: what time yesterday's bar is complete in the Nasdaq API. Announcements carry no ISIN (V23), so M3 links them to shares by company name.
 
@@ -97,7 +97,7 @@ Preferences stated for this work:
 
 ## Useful facts
 
-- Build window 28 Sep – 23 Oct 2026 is 20 working days, with no slack (COMPUTED).
+- No fixed dates (Vasco, 2026-09-27): the scored month is the first full calendar month after a completed shakedown, announced in advance.
 - Taso 4 hurdle: 4.20 % for Helsinki, 6.10 % for SEK and DKK names (Nordic schedule 0.25 %, min 10 €, V2), at 1,500 € with ASSUMED 10 bps slippage per side (COMPUTED).
 - November 2026 has 21 decision days and no exchange closures (SOURCED, Nasdaq calendars).
 - Nasdaq's Nordic auction migration (INET): Helsinki 28 Sep, Copenhagen and Stockholm 5 Oct 2026. Recheck opening times before the shakedown.
