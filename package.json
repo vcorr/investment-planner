@@ -14,9 +14,11 @@
     "job:seed-sample": "tsx src/jobs/seed-sample.ts",
     "job:load-verification": "tsx src/jobs/load-verification.ts",
     "job:backfill": "tsx src/jobs/backfill.ts",
-    "job:schedule-news-poller": "tsx src/jobs/schedule-news-poller.ts"
+    "job:schedule-news-poller": "tsx src/jobs/schedule-news-poller.ts",
+    "job:extraction-check": "tsx src/jobs/extraction-check.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
     "drizzle-orm": "^0.45.3",
     "postgres": "^3.4.9",
     "zod": "^4.6.5"
