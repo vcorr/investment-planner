@@ -69,7 +69,7 @@ export const DEFAULT_COST_CONFIG: CostConfig = costConfigSchema.parse({
     { minTurnoverEur: 5_000_000, bps: 10 },
     { minTurnoverEur: 1_000_000, bps: 25 },
   ],
-  hurdleMultiplier: 3, // Brief §11.
+  hurdleMultiplier: 2, // Brief §11 said 3; lowered to 2 by Vasco on 2026-09-27 (D13).
 });
 
 /** The fee schedule that applies to a share, by its trading currency. */
