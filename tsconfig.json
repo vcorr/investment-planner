@@ -11,7 +11,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "types": ["node"],
-    "noEmit": true
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
-  "include": ["src", "test", "supabase/functions/_shared", "drizzle.config.ts", "vitest.config.ts"]
+  "include": ["src", "test", "supabase/functions/_shared", "drizzle.config.ts", "vitest.config.ts", "web/vite.config.ts"]
 }

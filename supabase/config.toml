@@ -424,3 +424,11 @@ entrypoint = "./functions/news-poller/index.ts"
 # Specifies static files to be bundled with the function. Supports glob patterns.
 # For example, if you want to serve static HTML pages in your function:
 # static_files = [ "./functions/news-poller/*.html" ]
+
+# Settings API for the web page. The platform JWT check is off because withSupabase({ auth: "user" })
+# verifies the user's token against the project's JWKS itself, and only ALLOWED_USER_ID gets through.
+[functions.settings]
+enabled = true
+verify_jwt = false
+import_map = "./functions/settings/deno.json"
+entrypoint = "./functions/settings/index.ts"

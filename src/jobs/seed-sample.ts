@@ -2,12 +2,12 @@ import { sql } from "drizzle-orm";
 import { SAMPLE_SHARES } from "../config/sample.js";
 import { connect } from "../db/client.js";
 import { instruments, listings } from "../db/schema.js";
-import type { ListingRef } from "../settings/settings.js";
+import { DEFAULT_SCREEN, type ListingRef } from "../settings/settings.js";
 import { saveSettings } from "../settings/store.js";
 import { fetchShareList, pause, type Market, type ScreenerRow } from "../sources/nasdaq.js";
 
 // Resolves the development sample against Nasdaq's share list, stores the instruments and listings,
-// and saves the sample as a settings version.
+// and saves the sample, with the default screen rules, as a settings version.
 
 const { db, close } = connect();
 try {
@@ -51,8 +51,8 @@ try {
 
   const version = await saveSettings(
     db,
-    { universe: { mode: "sample", listings: refs } },
-    "Development sample of 10 shares (M1)",
+    { universe: { mode: "sample", listings: refs }, screen: DEFAULT_SCREEN },
+    "Development sample of 10 shares (M1), with the brief's five screen rules as unreviewed placeholders (M2)",
   );
   console.log(`Settings version ${version.id} (${version.hash.slice(0, 12)})${version.created ? ", new" : ", unchanged"}`);
 } finally {
